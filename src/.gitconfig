@@ -1,0 +1,44 @@
+[alias]
+  c = commit -am
+  s = status
+  co = checkout
+
+[color]
+  ui = always
+
+[color "diff"]
+  meta = yellow bold
+  commit = green bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = "red bold 52"
+  newNormal = "green bold"
+  newHighlight = "green bold 22"
+
+[color "branch"]
+  current = yellow bold
+  local = yellow
+  remote = green
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+[credential]
+	helper = osxkeychain
+
+[core]
+	editor = vimm
+	excludesfile = ~/.gitignore.global
+	pager = diff-so-fancy | less --tabs=4 -RFX
+
+# use separate file for username / github token / etc
+[include]
+  path = ~/.gitconfig.local
+

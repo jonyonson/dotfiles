@@ -1,0 +1,88 @@
+tap "caskroom/cask"
+tap "caskroom/fonts"
+tap "caskroom/versions"
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/versions"
+
+# homebrew installed packages
+# =================================
+brew "bash"
+brew "bash-completion@2"
+brew "bash-git-prompt"
+brew "coreutils"
+brew "diff-so-fancy"
+brew "emojify"
+brew "findutils", args: ["with-default-names"]
+brew "fish"
+brew "flow"
+brew "git"
+brew "gnu-sed", args: ["with-default-names"]
+brew "hugo"
+brew "lastpass-cli", args: ["--with-pinentry --with-doc"]
+brew "micro"
+brew "mas"  # install apps from the App Store | mas install <app>
+brew "python2"
+brew "python3"
+brew "the_silver_searcher" # http://geoff.greer.fm/ag usage: ag
+brew "tree"
+brew "vim", args: ["with-override-system-vi", "with-python3"]
+brew "watchman"
+brew "wget"
+brew "yarn", args: ["without-node"]
+brew "youtube-dl"
+
+# https://github.com/vvo/gifify | npm install -g gifify
+# ======================================================
+brew "ffmpeg", args: ["--with-libass --with-fontconfig"]
+brew "imagemagick", args: ["--with-fontconfig"]
+brew "giflossy"
+
+# brew cask install apps
+# =================================
+cask_args appdir: "/Applications"
+cask "adobe-acrobat-reader"
+cask "alfred"
+cask "chrome-devtools"
+cask "dash"
+cask "dropbox"
+cask "firefox"
+cask "google-chrome"
+cask "google-chrome-canary"
+cask "hyper"
+cask "intellij-idea"
+cask "iterm"
+cask "kindle"
+cask "macvim"
+cask "now"
+cask "pycharm-ce"
+cask "slack"
+cask "spotify"
+cask "sublime-text"
+cask "vlc"
+cask "visual-studio-code"
+
+#cask "mongodb-compass"
+#cask "mongodb-compass-beta"
+#cask "kap"
+#cask "disk-inventory-x"
+#cask "clipy"
+
+# fonts
+cask "font-inconsolata-for-powerline"
+cask "font-menlo-for-powerline"
+cask "font-source-code-pro"
+cask "font-fira-code"
+
+# macOS App Store Apps
+# =================================
+mas "Dashlane", id: 552383089
+mas "LastPass", id: 926036361
+mas "Todoist", id: 585829637
+mas "Twitter", id: 409789998
+mas "Xcode", id: 497799835
+
+#mas "BetterSnapTool", id: 417375580
+#mas "AnyDo", id: 944960179
+#mas "Reeder", id: 880001334
+

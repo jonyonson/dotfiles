@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# opens a file (or webpage) in Chrome (webpage requires 'http://')
+
+open -a Google\ Chrome "$1"
