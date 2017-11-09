@@ -29,6 +29,9 @@ alias ll='ls -oh ${colorflag}'   # long format (without group id)
 alias l.='ls -A ${colorflag}'    # Show hidden files
 alias ll.='ls -Aho ${colorflag}' # Show hidden files in long format
 
+# ssh
+alias copy_ssh='pbcopy < ~/.ssh/id_rsa.pub'
+
 # Git
 alias g="git"
 alias push="git push"
@@ -38,7 +41,7 @@ alias undopush="git push -f origin HEAD^:master" # undo a `git push`
 alias v="vim"
 alias rmswap="find $HOME/.vim/swaps -name '*.sw[a-z]' | xargs rm" # remove vim swap files
 
-# npm
+# npm 
 alias npm.leaves="npm ls --depth=0 -g"
 
 # Homebrew
