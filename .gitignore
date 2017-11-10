@@ -1,10 +1,5 @@
 private/*
-
-src/.vim/plugged/*
-src/.vim/autoload/*
 src/.vim/.viminfo
-
 .z
-
 .vscode
 .DS_Store
