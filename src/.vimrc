@@ -1,7 +1,4 @@
 
-call plug#begin()
-Plug 'faith/vim-go', { 'do': ':GoInstallBinaries' }
-call plug#end()
 
 "----------------------------------
 " General settings

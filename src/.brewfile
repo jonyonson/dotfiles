@@ -88,21 +88,3 @@ mas "Spark", id: 1176895641
 
 # [^c]: https://github.com/vvo/gifify |
 # [^c]: npm install -g gifify
-
-
-
-
-
-# tap "homebrew/versions"
-# brew emojify
-# brew "hugo"
-# brew "micro"
-#cask "mongodb-compass"
-#cask "mongodb-compass-beta"
-#cask "kap"
-#cask "disk-inventory-x"
-#cask "clipy"
-#mas "BetterSnapTool", id: 417375580
-#mas "AnyDo", id: 944960179
-#mas "Reeder", id: 880001334
-#mas "Trello", id: 1278508951
