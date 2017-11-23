@@ -26,6 +26,7 @@ brew "mas" # [^b]
 brew "python2"
 brew "python3"
 brew "the_silver_searcher" #[^a]
+brew "ssh-copy-id"
 brew "tree"
 brew "vim", args: ["with-override-system-vi", "with-python3"]
 brew "watchman"
