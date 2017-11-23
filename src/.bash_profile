@@ -5,7 +5,19 @@ export DOTFILES=$HOME/.dotfiles
 export DROPBOX=$HOME/Dropbox
 export NVM_DIR=$HOME/.nvm
 
-export PATH="$HOME/bin:$PATH" # ~/bin
+# PATH=$NVM_DIR/versions/*/bin
+# PATH=$PATH:~/Library/Python/3.6/bin
+# PATH=$PATH:/usr/local/bin
+# PATH=$PATH:/usr/bin
+# PATH=$PATH:/usr/sbin
+# PATH=$PATH:/sbin
+# PATH=$PATH:~/bin
+# export PATH
+
+
+PATH="$HOME/bin:$PATH" # ~/bin
+PATH="$HOME/Library/Python/3.6/bin:$PATH"
+export PATH
 
 # source our dotfiles
 [ -r $HOME/.extra ]         && . $HOME/.extra
