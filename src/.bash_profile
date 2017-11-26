@@ -5,13 +5,13 @@ export DOTFILES=$HOME/.dotfiles
 export DROPBOX=$HOME/Dropbox
 export NVM_DIR=$HOME/.nvm
 
-PATH=/usr/local/bin:$PATH
+# PATH=/usr/local/bin:$PATH
 PATH=$PATH:~/bin
 export PATH
 
 # source our dotfiles
-[ -r $HOME/.extra ]         && . $HOME/.extra
-[ -r $HOME/.functions ]     && . $HOME/.functions
+# [ -r $HOME/.extra ]         && . $HOME/.extra
+# [ -r $HOME/.functions ]     && . $HOME/.functions
 [ -r $HOME/.bash_aliases ]  && . $HOME/.bash_aliases
 [ -r $HOME/.bash_prompt ]   && . $HOME/.bash_prompt
 
@@ -20,9 +20,9 @@ export PATH
 [ -s $NVM_DIR/nvm.sh ]      && . $NVM_DIR/nvm.sh    # loads nvm
 
 # bash completion
-if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
-    source $(brew --prefix)/share/bash-completion/bash_completion
-fi
+# if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
+#     source $(brew --prefix)/share/bash-completion/bash_completion
+# fi
 
 # bash completion for Git, npm, Homebrew, Hugo, youtube-dl, tmux
 if [ -d $(brew --prefix)/etc/bash_completion.d ]; then
