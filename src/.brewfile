@@ -1,13 +1,13 @@
 # https://github.com/Homebrew/homebrew-bundle
-# This file must be saved as ~/Brewfile in order to run brew bundle
-
+# Copy this file to $HOME/Brewfile
+# `brew bundle` installs all the formulae / upgrades the formulae if one is available
+# `brew bundle check --force` uninstalls / installs formulae to match this file
 
 tap "caskroom/cask"
 tap "caskroom/fonts"
 tap "caskroom/versions"
 tap "homebrew/bundle"
 tap "homebrew/core"
-
 
 # Homebrew installed packages
 # =================================
@@ -21,11 +21,12 @@ brew "fish"
 brew "flow"
 brew "git"
 brew "gnu-sed", args: ["with-default-names"]
+brew "hugo"
 brew "lastpass-cli", args: ["--with-pinentry --with-doc"]
-brew "mas" # [^b]
+brew "mas" # ^1
 brew "python2"
 brew "python3"
-brew "the_silver_searcher" #[^a]
+brew "the_silver_searcher" # ^2
 brew "ssh-copy-id"
 brew "tree"
 brew "vim", args: ["with-override-system-vi", "with-python3"]
@@ -33,10 +34,9 @@ brew "watchman"
 brew "wget"
 brew "yarn", args: ["without-node"]
 brew "youtube-dl"
-brew "ffmpeg", args: ["--with-libass --with-fontconfig"] # [c^]
-brew "imagemagick", args: ["--with-fontconfig"] # [c^]
-brew "giflossy" # [c^]
-
+brew "ffmpeg", args: ["--with-libass --with-fontconfig"] # ^3
+brew "imagemagick", args: ["--with-fontconfig"] # ^3
+brew "giflossy" # ^3
 
 # brew-cask installed Applications
 # =================================
@@ -62,7 +62,6 @@ cask "sublime-text"
 cask "vlc"
 cask "visual-studio-code"
 
-
 # brew-cask installed Fonts
 # =================================
 cask "font-inconsolata-for-powerline"
@@ -70,22 +69,23 @@ cask "font-menlo-for-powerline"
 cask "font-source-code-pro"
 cask "font-fira-code"
 
-
 # macOS App Store Apps
 # =================================
 mas "Dashlane", id: 552383089
 mas "LastPass", id: 926036361
 mas "Todoist", id: 585829637
 mas "Twitter", id: 409789998
-mas "Xcode", id: 497799835
-mas "Spark", id: 1176895641
+#mas "Spark", id: 1176895641
+#mas "Xcode", id: 497799835
 
 
-# [^a]: http://geoff.greer.fm/ag
-# [^a]: usage: ag [FILE-TYPE] [OPTIONS] PATTERN [PATH]
+# =================================
 
-# [^b]: install macOS App Store apps
-# [^b]: `mas install <app>`
+# 1: install macOS App Store apps
+#  : `mas install <app>`
 
-# [^c]: https://github.com/vvo/gifify |
-# [^c]: npm install -g gifify
+# 2: http://geoff.greer.fm/ag
+#  : usage: ag [FILE-TYPE] [OPTIONS] PATTERN [PATH]
+
+# 3: https://github.com/vvo/gifify |
+#  : npm install -g gifify
