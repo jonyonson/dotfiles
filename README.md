@@ -1,8 +1,5 @@
 # JT's dotfiles
-macOS & Ubuntu config files for bash, vim, git, etc.  
-
-### Install
-`bash <(curl -s https://raw.githubusercontent.com/jonyonson/dotfiles/master/install_dotfiles.sh)`
+macOS & Ubuntu config files for bash, vim, git, etc.
 
 ### Acknowledgements
 
