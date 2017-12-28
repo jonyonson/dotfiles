@@ -484,37 +484,71 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>863 419 445 235 0 0 2560 1417 </string>
+	<string>863 419 445 101 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>700 751 796 473 0 0 2560 1417 </string>
+	<string>177 703 918 401 0 0 2560 1417 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Menlo-Regular</key>
 	<string>479 711 260 68 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>322 196 570 452 0 0 2560 1417 </string>
+	<string>82 884 810 502 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>422 600 730 477 0 0 2560 1417 </string>
+	<string>475 523 730 477 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
-	<string>574 835 570 452 0 0 2560 1417 </string>
+	<string>574 799 730 477 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 11</key>
-	<string>595 812 570 452 0 0 2560 1417 </string>
+	<string>595 776 730 477 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 12</key>
-	<string>616 789 570 452 0 0 2560 1417 </string>
+	<string>616 753 730 477 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 13</key>
+	<string>595 812 730 477 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 14</key>
+	<string>616 789 730 477 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 15</key>
+	<string>637 766 730 477 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 16</key>
+	<string>658 743 730 477 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 17</key>
+	<string>679 720 730 477 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 18</key>
+	<string>700 697 730 477 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 19</key>
+	<string>721 674 730 477 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>364 158 570 452 0 0 2560 1417 </string>
+	<string>221 118 730 477 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 20</key>
+	<string>742 651 730 477 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 21</key>
+	<string>763 628 730 477 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 22</key>
+	<string>784 605 730 477 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 23</key>
+	<string>805 582 730 477 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 24</key>
+	<string>826 559 730 477 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 25</key>
+	<string>847 536 730 477 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 26</key>
+	<string>868 513 730 477 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 27</key>
+	<string>889 490 730 477 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 28</key>
+	<string>910 467 730 477 0 0 2560 1417 </string>
+	<key>NSWindow Frame iTerm Window 29</key>
+	<string>2001 81 730 477 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>1017 369 570 452 0 0 2560 1417 </string>
+	<string>1400 571 730 477 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>360 168 570 452 0 0 2560 1417 </string>
+	<string>360 132 730 477 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
-	<string>1158 328 570 452 0 0 2560 1417 </string>
+	<string>1158 292 730 477 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
-	<string>448 965 570 452 0 0 2560 1417 </string>
+	<string>448 929 730 477 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 7</key>
-	<string>469 961 570 452 0 0 2560 1417 </string>
+	<string>469 925 730 477 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 8</key>
-	<string>532 881 570 452 0 0 2560 1417 </string>
+	<string>532 845 730 477 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 9</key>
-	<string>553 858 570 452 0 0 2560 1417 </string>
+	<string>553 822 730 477 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1083,7 +1117,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Menlo-Regular 15</string>
+			<string>Menlo-Regular 16</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1152,8 +1186,21 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>F70C8861-D78A-4FE1-ABA5-E0D5330A2958</string>
+	<key>NoSyncLastTipTime</key>
+	<real>535601374.76779902</real>
+	<key>NoSyncPermissionToShowTip</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>533274811.27104199</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+		<string>0001</string>
+		<string>0002</string>
+	</array>
+	<key>NoSyncTurnOffBracketedPasteOnHostChange</key>
+	<true/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1189,6 +1236,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/jonathan/Dropbox/dotfiles/lib</string>
+	<key>PromptOnQuit</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -1198,7 +1247,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-25T04:55:26Z</date>
+	<date>2017-12-21T11:41:59Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>WordCharacters</key>

@@ -1,17 +1,30 @@
-# Git Prompt
+# ~/.bash_prompt
 # ========================================
 
-# Using \[ and \] around colors is necessary to prevent issues with command lin
-# issues with command line editing/browsing/completion!
-RED='\[\e[31m\]'
-GREEN='\[\e[32m\]'
-YELLOW='\[\e[1;33m\]'
-BLUE='\[\e[1;34m\]'
-MAGENTA='\[\e[1;35m\]'
-CYAN='\[\e[1;36m\]'
-WHITE='\[\e[1;37m\]'
-CLEAR='\[\e[0m\]'
+# E#scape codes for coloring bash prompt
+        RED="\[\033[0;31m\]"
+     YELLOW="\[\033[1;33m\]"
+      GREEN="\[\033[0;32m\]"
+       BLUE="\[\033[1;34m\]"
+    MAGENTA="\[\033[1;35m\]"
+       CYAN="\[\033[1;36m\]"
+  LIGHT_RED="\[\033[1;31m\]"
+LIGHT_GREEN="\[\033[1;32m\]"
+      WHITE="\[\033[1;37m\]"
+ LIGHT_GRAY="\[\033[0;37m\]"
+      CLEAR="\[\e[0m\]"
 
+# Determine active Python virtualenv details.
+function set_virtualenv () {
+  if test -z "$VIRTUAL_ENV" ; then
+      PYVENV=""
+  else
+      PYVENV="[`basename \"$VIRTUAL_ENV\"`]"
+  fi
+}
 
-PROMPT_COMMAND='__git_ps1 "${GREEN}➜  ${YELLOW}\w${CLEAR}" " "'
+# Set the PYVENV variable.
+set_virtualenv
 
+export PS1="${PYVENV}${GREEN}➜ ${YELLOW}\w ${CLEAR}"
+# PROMPT_COMMAND='__git_ps1 "${GREEN}➜${VENV} ${YELLOW}\w${CLEAR}" " "'
