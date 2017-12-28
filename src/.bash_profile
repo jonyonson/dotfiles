@@ -7,12 +7,6 @@ for file in ~/.{exports,functions,bash_aliases,bash_prompt,extra}; do
 done
 unset file
 
-# source our dotfiles
-# [ -r $HOME/.functions ]     && . $HOME/.functions
-# [ -r $HOME/.bash_aliases ]  && . $HOME/.bash_aliases
-# [ -r $HOME/.bash_prompt ]   && . $HOME/.bash_prompt
-# [ -r $HOME/.extra ]         && . $HOME/.extra
-
 # source some vendor files
 [ -r $DOTFILES/lib/z.sh ]   && . $DOTFILES/lib/z.sh # loads z
 [ -s $NVM_DIR/nvm.sh ]      && . $NVM_DIR/nvm.sh    # loads nvm
