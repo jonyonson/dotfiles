@@ -41,7 +41,7 @@ alias undopush="git push -f origin HEAD^:master" # undo a `git push`
 alias v="vim"
 alias rmswap="find $HOME/.vim/swaps -name '*.sw[a-z]' | xargs rm" # remove vim swap files
 
-# npm 
+# npm
 alias npm.leaves="npm ls --depth=0 -g"
 
 # Homebrew
