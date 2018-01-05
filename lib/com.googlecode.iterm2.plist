@@ -486,17 +486,17 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>863 419 445 101 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>177 703 918 401 0 0 2560 1417 </string>
+	<string>1401 666 796 473 0 0 2560 1417 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Menlo-Regular</key>
 	<string>479 711 260 68 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>82 884 810 502 0 0 2560 1417 </string>
+	<string>1558 550 810 502 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>475 523 730 477 0 0 2560 1417 </string>
+	<string>1476 505 810 502 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
-	<string>574 799 730 477 0 0 2560 1417 </string>
+	<string>574 761 810 502 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 11</key>
-	<string>595 776 730 477 0 0 2560 1417 </string>
+	<string>595 738 1380 502 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 12</key>
 	<string>616 753 730 477 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 13</key>
@@ -514,7 +514,7 @@
 	<key>NSWindow Frame iTerm Window 19</key>
 	<string>721 674 730 477 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>221 118 730 477 0 0 2560 1417 </string>
+	<string>385 915 810 502 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 20</key>
 	<string>742 651 730 477 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 21</key>
@@ -536,19 +536,19 @@
 	<key>NSWindow Frame iTerm Window 29</key>
 	<string>2001 81 730 477 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>1400 571 730 477 0 0 2560 1417 </string>
+	<string>1156 744 810 502 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>360 132 730 477 0 0 2560 1417 </string>
+	<string>105 850 810 502 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
-	<string>1158 292 730 477 0 0 2560 1417 </string>
+	<string>936 584 810 502 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
-	<string>448 929 730 477 0 0 2560 1417 </string>
+	<string>674 580 810 502 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 7</key>
-	<string>469 925 730 477 0 0 2560 1417 </string>
+	<string>469 887 810 502 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 8</key>
-	<string>532 845 730 477 0 0 2560 1417 </string>
+	<string>532 807 810 502 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 9</key>
-	<string>553 822 730 477 0 0 2560 1417 </string>
+	<string>553 784 810 502 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -789,7 +789,7 @@
 			<key>Disable Window Resizing</key>
 			<true/>
 			<key>Flashing Bell</key>
-			<false/>
+			<true/>
 			<key>Foreground Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1153,7 +1153,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -1187,7 +1187,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>F70C8861-D78A-4FE1-ABA5-E0D5330A2958</string>
 	<key>NoSyncLastTipTime</key>
-	<real>535601374.76779902</real>
+	<real>536356035.64536297</real>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
@@ -1198,6 +1198,10 @@
 		<string>0000</string>
 		<string>0001</string>
 		<string>0002</string>
+		<string>0003</string>
+		<string>0004</string>
+		<string>0005</string>
+		<string>0006</string>
 	</array>
 	<key>NoSyncTurnOffBracketedPasteOnHostChange</key>
 	<true/>
@@ -1247,9 +1251,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-12-21T11:41:59Z</date>
+	<date>2017-12-30T16:39:20Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>ShowFullScreenTabBar</key>
+	<false/>
+	<key>SmartPlacement</key>
+	<true/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>

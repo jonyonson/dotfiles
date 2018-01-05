@@ -30,15 +30,14 @@
   changed = green
   untracked = cyan
 
-[credential]
-	helper = osxkeychain
-
 [core]
 	editor = vim
-	excludesfile = ~/.gitignore_global
+	excludesfile = ~/.gitignore
 	pager = diff-so-fancy | less --tabs=4 -RFX
 
 # use separate file for username / github token / etc
 [include]
-  path = ~/.gitconfig_local
+  path = ~/.gitconfig.local
 
+[credential]
+	helper = osxkeychain

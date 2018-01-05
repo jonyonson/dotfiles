@@ -1,6 +1,17 @@
-private/*
+# git credential file
+.gitconfig.local
+
+# vim
 .vim/.viminfo
 .vim/.netrwhist
-.z
-.vscode
+.vim/swaps/*
+.vim/undo
+
+# Node
+npm-debug.log
+node_modules
+
+# Mac
 .DS_Store
+
+.env
