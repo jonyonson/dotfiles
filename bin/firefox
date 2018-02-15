@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-# opens a file (or webpage) in Firefox (webpage requires 'http://')
-
-open -a Firefox "$1"
