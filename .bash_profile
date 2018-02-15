@@ -1,31 +1,36 @@
 #  ~/.bash_profile for macOS
 # ==========================================
 
-# Load our dotfiles
-[ -r $HOME/.exports ]      && . $HOME/.exports
-[ -r $HOME/.aliases ]      && . $HOME/.aliases
-[ -r $HOME/.functions ]    && . $HOME/.functions
-[ -r $HOME/.bash_prompt ]  && . $HOME/.bash_prompt
-[ -r $HOME/.env ]          && . $HOME/.env
+# source our dotfiles
+for f in ~/.{exports,bash_aliases,functions,bash_prompt,env}; do
+  [ -r "$f" ] && source "$f"
+done
+unset f
 
-# Source some vendor files
-[ -r $DOTFILES/lib/z.sh ]  && . $DOTFILES/lib/z.sh # loads z
-[ -r $NVM_DIR/nvm.sh ]     && . $NVM_DIR/nvm.sh    # loads nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-# Bash completion
-if [ -f /usr/local/share/bash-completion/bash_completion ]; then
-  . /usr/local/share/bash-completion/bash_completion
+# https://github.com/rupa/z | 'brew install z'
+zpath="$(brew --prefix)/etc/profile.d/z.sh"
+[ -s $zpath ] && source $zpath
+
+# # bash completion
+if [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
+  source "$(brew --prefix)/share/bash-completion/bash_completion"
 fi
 
-# Bash completion for nvm
-[ -r $NVM_DIR/bash_completion ] && . $NVM_DIR/bash_completion
+# # homebrew completion
+if [ -f "$(brew --prefix)/etc/bash_completion.d/brew" ]; then
+  source "$(brew --prefix)/etc/bash_completion.d/brew"
+fi
 
-# Color setup for gnu `ls` | http://github.com/trapd00r/LS_COLORS
-command -v gdircolors >/dev/null 2>&1 || alias gdircolors="dircolors"
-eval "$(gdircolors -b ~/.dircolors)" # exports LS_COLORS
+# # hub completion
+if [ -f "$(brew --prefix)/etc/bash_completion.d/hub.bash_completion.sh" ]; then
+  source "$(brew --prefix)/etc/bash_completion.d/hub.bash_completion.sh"
+fi
 
-# `ls` emits color codes only when output is directed to a terminal.
-export CLICOLOR_FORCE=1 # this flag forces the use of color, even when piping
+# nvm completion
+[ -r $NVM_DIR/bash_completion ] && source $NVM_DIR/bash_completion
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
@@ -35,3 +40,12 @@ shopt -s cdspell;
 shopt -s dirspell 2> /dev/null
 # Turn on recursive globbing (enables ** to recurse all directories)
 shopt -s globstar 2> /dev/null
+
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+  PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u \w\a\]$PS1"
+  ;;
+*)
+  ;;
+esac

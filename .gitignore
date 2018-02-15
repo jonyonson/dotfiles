@@ -1,17 +1,22 @@
+# working files
+.vim/swaps/*
+.vim/undo
+.vim/.netrwhist
+.vim/.viminfo
+
 # git credential file
 .gitconfig.local
 
-# vim
-.vim/.viminfo
-.vim/.netrwhist
-.vim/swaps/*
-.vim/undo
-
-# Node
+# node
 npm-debug.log
 node_modules
 
-# Mac
+# macOS
 .DS_Store
+.Spotlight-V100
+.Trashes
 
+# secrets
 .env
+
+.vim/bundle/

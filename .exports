@@ -3,9 +3,11 @@
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export NVM_DIR=$HOME/.nvm
 export EDITOR='vim' # default editor
 export MANPAGER='less -s -M +Gg'
+
+# `ls` emits color codes only when output is directed to a terminal.
+export CLICOLOR_FORCE=1 # this flag forces the use of color, even when piping
 
 #https://unix.stackexchange.com/questions/119/colors-in-man-pages
 export LESS_TERMCAP_mb=$(tput bold; tput setaf 2) # green
@@ -28,5 +30,4 @@ export LESS="--RAW-CONTROL-CHARS"
 # Path setup
 PATH=$HOME/bin:$PATH
 PATH=$JAVA_HOME/bin:$PATH
-PATH=$HOME/nand2tetris/tools:$PATH
-# export PATH
+export PATH

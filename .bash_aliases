@@ -1,13 +1,12 @@
 # ~/.bash_aliases for macOS
 # ===============================
 
-# Easier navigation: .. & ...
+# easier navigation: .. & ...
 alias ..="cd .."
 alias ...="cd ../.."
 
-# Since I'm always accidentally doing it
+# since I'm always accidentally doing it
 alias :x="exit"
-alias ZZ="exit"
 
 # mv, rm, cp
 alias mv="mv -v"
@@ -15,13 +14,21 @@ alias rm="\rm -v -i"
 alias cp="cp -v"
 
 # safe alternative to `rm` | npm install -g trash-cli
-#hash trash >/dev/null 2>&1 || alias rm="trash"
+hash trash >/dev/null 2>&1 || alias rm="trash"
 
 # use coreutils 'ls' | brew install coreutils
 hash gls >/dev/null 2>&1 || alias gls="ls"
 
-# List directory contents
-if gls --color > /dev/null 2>&1; then colorflag="--color"; else colorflag="-G"; fi;
+# Color setup for gnu `ls` | http://github.com/trapd00r/LS_COLORS
+command -v gdircolors >/dev/null 2>&1 || alias gdircolors="dircolors"
+eval "$(gdircolors -b ~/.dircolors)" # exports LS_COLORS
+
+# list directory contents
+if gls --color > /dev/null 2>&1; then
+  colorflag="--color"
+else
+  colorflag="-G"
+fi
 
 alias ls='gls -N ${colorflag}'
 alias lsd='ls -l | grep "^d"'    # only directories
@@ -32,19 +39,20 @@ alias ll.='ls -Aho ${colorflag}' # Show hidden files in long format
 # ssh
 alias copy_ssh='pbcopy < ~/.ssh/id_rsa.pub'
 
-# Git
+# git
+alias git="hub"
 alias g="git"
 alias push="git push"
 alias undopush="git push -f origin HEAD^:master" # undo a `git push`
 
-# Vim
+# vim
 alias v="vim"
 alias rmswap="find $HOME/.vim/swaps -name '*.sw[a-z]' | xargs rm" # remove vim swap files
 
 # npm
 alias npm.leaves="npm ls --depth=0 -g"
 
-# Homebrew
+# homebrew
 alias cask="brew cask"
 
 # show/hide hidden files in Finder
@@ -59,6 +67,6 @@ alias declutter="defaults write com.apple.finder CreateDesktop -bool false && ki
 # http://jonbellah.com/recursively-remove-ds-store
 alias ds_store.delete="find . -name '.DS_Store' -type f -delete"
 
-# MacVim
+# macvim
 alias gv="gvim"
 alias emptytrash="rm -rf ~/.Trash"
