@@ -16,5 +16,10 @@ node_modules
 .Spotlight-V100
 .Trashes
 
+# vscode
+.vscode/
+
 # secrets
 .env
+.extra
+.gitconfig.local
