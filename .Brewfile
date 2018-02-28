@@ -32,7 +32,6 @@ brew "wget"
 brew "yarn", args: ["without-node"]
 brew "youtube-dl"
 brew "watchman"
-brew "z"
 
 # `brew graph --installed --highlight-leaves | fdp -Tpng -ograph.png`
 # `open graph.png`
@@ -61,8 +60,8 @@ cask "android-studio"
 cask "alfred"
 cask "dash"
 cask "dropbox"
-cask "diff-so-fancy"
 cask "firefox"
+cask "firefox-developer-edition"
 cask "google-chrome"
 cask "google-chrome-canary"
 cask "hyper"
@@ -91,5 +90,7 @@ mas "Dashlane", id: 552383089
 mas "LastPass", id: 926036361
 mas "Pocket", id: 568494494
 mas "Todoist", id: 585829637
-mas "Twitter", id: 409789998
-#mas "Xcode", id: 497799835
+mas "Xcode", id: 497799835
+mas "CleanMyDrive 2", id: 523620159
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
