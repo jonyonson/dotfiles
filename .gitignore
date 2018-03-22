@@ -23,6 +23,3 @@ node_modules
 .env
 .extra
 .gitconfig.local
-
-# do not commit
-*.dnc
