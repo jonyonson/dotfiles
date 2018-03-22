@@ -23,11 +23,12 @@ brew "git"
 brew "hub"
 brew "gnu-sed", args: ["with-default-names"]
 brew "lastpass-cli", args: ["with-pinentry"]
+berw "pipenv"
 brew "python3"
 brew "ssh-copy-id"
 brew "terminal-notifier"
 brew "tree"
-brew "vim", args: ["with-override-system-vi", "with-python3"]
+brew "vim"
 brew "wget"
 brew "yarn", args: ["without-node"]
 brew "youtube-dl"
