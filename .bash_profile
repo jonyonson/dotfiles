@@ -10,21 +10,18 @@ unset f
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-# https://github.com/rupa/z | 'brew install z'
-zpath="$(brew --prefix)/etc/profile.d/z.sh"
-[ -s $zpath ] && source $zpath
 
-# # bash completion
+# bash completion
 if [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
   source "$(brew --prefix)/share/bash-completion/bash_completion"
 fi
 
-# # homebrew completion
+# homebrew completion
 if [ -f "$(brew --prefix)/etc/bash_completion.d/brew" ]; then
   source "$(brew --prefix)/etc/bash_completion.d/brew"
 fi
 
-# # hub completion
+# hub completion
 if [ -f "$(brew --prefix)/etc/bash_completion.d/hub.bash_completion.sh" ]; then
   source "$(brew --prefix)/etc/bash_completion.d/hub.bash_completion.sh"
 fi
@@ -49,3 +46,5 @@ xterm*|rxvt*)
 *)
   ;;
 esac
+
+
