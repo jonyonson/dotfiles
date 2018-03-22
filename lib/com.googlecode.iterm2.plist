@@ -490,11 +490,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 154 606 469 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1092 742 918 381 0 0 2560 1417 </string>
+	<string>1092 625 796 473 0 0 2560 1417 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Menlo-Regular</key>
 	<string>479 711 260 68 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>105 850 810 502 0 0 2560 1417 </string>
+	<string>850 382 810 502 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1476 505 810 502 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
@@ -1179,7 +1179,7 @@
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
-			<true/>
+			<false/>
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
@@ -1251,6 +1251,8 @@
 	<string>/Users/jonathan/Dropbox/dotfiles/lib</string>
 	<key>PromptOnQuit</key>
 	<false/>
+	<key>QuitWhenAllWindowsClosed</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -1260,7 +1262,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-02-18T07:32:30Z</date>
+	<date>2018-03-21T00:18:59Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
