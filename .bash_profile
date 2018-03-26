@@ -9,7 +9,7 @@ unset f
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
+[ -r $NVM_DIR/bash_completion ] && source $NVM_DIR/bash_completion
 
 # bash completion
 if [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
@@ -26,17 +26,27 @@ if [ -f "$(brew --prefix)/etc/bash_completion.d/hub.bash_completion.sh" ]; then
   source "$(brew --prefix)/etc/bash_completion.d/hub.bash_completion.sh"
 fi
 
-# nvm completion
-[ -r $NVM_DIR/bash_completion ] && source $NVM_DIR/bash_completion
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+if [ -f "$HOME/.config/yarn/global/node_modules/tabtab/.completions/serverless.bash" ]; then
+  source "$HOME/.config/yarn/global/node_modules/tabtab/.completions/serverless.bash"
+fi
+
+# uninstall by removing these lines or running `tabtab uninstall sls`
+if [ -f "$HOME.config/yarn/global/node_modules/tabtab/.completions/sls.bash" ]; then
+  source "$HOME/.config/yarn/global/node_modules/tabtab/.completions/sls.bash"
+fi
+
+# Autocorrect on directory names to match a glob.
+shopt -s dirspell 2> /dev/null
+
+# recursive globbing (enables ** to recurse all dirs)
+shopt -s globstar 2> /dev/null
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
+
 # Correct spelling errors in arguments supplied to cd
 shopt -s cdspell;
-# Autocorrect on directory names to match a glob.
-shopt -s dirspell 2> /dev/null
-# Turn on recursive globbing (enables ** to recurse all directories)
-shopt -s globstar 2> /dev/null
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
