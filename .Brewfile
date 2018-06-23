@@ -15,24 +15,24 @@ brew "bash"
 brew "bash-completion@2"
 brew "brew-cask-completion"
 brew "coreutils"
-brew "diff-so-fancy"
-brew "findutils", args: ["with-default-names"]
-brew "fish"
-brew "flow"
+# brew "diff-so-fancy"
+# brew "findutils", args: ["with-default-names"]
+# brew "fish"
+# brew "flow"
 brew "git"
 brew "hub"
-brew "gnu-sed", args: ["with-default-names"]
-brew "lastpass-cli", args: ["with-pinentry"]
-berw "pipenv"
+# brew "gnu-sed", args: ["with-default-names"]
+# brew "lastpass-cli", args: ["with-pinentry"]
+# berw "pipenv"
 brew "python3"
-brew "ssh-copy-id"
-brew "terminal-notifier"
+# brew "ssh-copy-id"
+# brew "terminal-notifier"
 brew "tree"
 brew "vim"
 brew "wget"
 brew "yarn", args: ["without-node"]
 brew "youtube-dl"
-brew "watchman"
+# brew "watchman"
 
 # `brew graph --installed --highlight-leaves | fdp -Tpng -ograph.png`
 # `open graph.png`
@@ -41,13 +41,27 @@ brew "brew-graph"
 
 # http://geoff.greer.fm/ag
 # usage: ag [FILE-TYPE] [OPTIONS] PATTERN [PATH]
-brew "the_silver_searcher"
+# brew "the_silver_searcher"
 
 # https://github.com/vvo/gifify
 # npm install -g gifify
-brew "ffmpeg", args: ["with-libass", "with-fontconfig"]
-brew "imagemagick", args: ["with-fontconfig"]
-brew "giflossy"
+# brew "ffmpeg", args: ["with-libass", "with-fontconfig"]
+# brew "imagemagick", args: ["with-fontconfig"]
+# brew "giflossy"
+
+# https://github.com/bitcoin/bitcoin/blob/master/doc/build-osx.md
+#brew "automake"
+#brew "berkeley-db4"
+#brew "libtool"
+#brew "boost"
+#brew "miniupnpc"
+#brew "openssl"
+#brew "pkg-config"
+#brew "protobuf"
+#brew "python3"
+#brew "qt"
+#brew "libevent"
+#brew "librsvg"
 
 # install macOS App Store apps
 # `mas install <app>`
