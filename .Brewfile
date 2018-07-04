@@ -17,9 +17,10 @@ brew "brew-cask-completion"
 brew "coreutils"
 # brew "diff-so-fancy"
 # brew "findutils", args: ["with-default-names"]
-# brew "fish"
+brew "fish"
 # brew "flow"
 brew "git"
+brew "httpie"
 brew "hub"
 # brew "gnu-sed", args: ["with-default-names"]
 # brew "lastpass-cli", args: ["with-pinentry"]
@@ -96,6 +97,7 @@ cask "visual-studio-code"
 cask "font-inconsolata-for-powerline"
 cask "font-menlo-for-powerline"
 cask "font-source-code-pro"
+cask "font-input"
 cask "font-fira-code"
 cask "font-hack"
 
