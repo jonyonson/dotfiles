@@ -79,14 +79,14 @@ fi;
 # Set the terminal title and prompt.
 PS1="\[\033]0;\W\007\]";     # working directory base name
 PS1+="\n";                   # newline
-PS1+="\[${userStyle}\]\u";   # username
-PS1+="\[${reset}\] at ";     # 'at'
-PS1+="\[${hostStyle}\]\h";   # host
-PS1+="\[${reset}\] in ";     # 'in'
-PS1+="\[${magenta}\]\w";     # working directory full path
+PS1+="${userStyle}\u";       # username
+PS1+="${reset} at ";         # 'at'
+PS1+="${hostStyle}\h";       # host
+PS1+="${reset} in ";         # 'in'
+PS1+="${magenta}\w";         # working directory full path
 PS1+="\$(prompt_git \"\[${reset}\] on \[${light_green}\]\" \"\[${blue}\]\")"; # Git repository details
 PS1+="\n";                   # newline
-PS1+="\[${reset}\]\$ "       # '$'
+PS1+="${reset}\$ "           # '$'
 export PS1;
 
 PS2="\[${yellow}\]→ \[${reset}\]";
