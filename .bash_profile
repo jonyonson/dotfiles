@@ -2,14 +2,18 @@
 # ==========================================
 
 # source our dotfiles
-for f in ~/.{exports,bash_aliases,functions,bash_prompt,env}; do
-  [ -r "$f" ] && source "$f"
+for file in ~/.{exports.sh,bash_aliases,functions,bash_prompt,env}; do
+  [ -r "$file" ] && source "$file"
 done
-unset f
+unset file
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -r $NVM_DIR/bash_completion ] && source $NVM_DIR/bash_completion
+
+##
+## Command-line completion
+##
 
 # bash completion
 if [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
@@ -26,15 +30,33 @@ if [ -f "$(brew --prefix)/etc/bash_completion.d/hub.bash_completion.sh" ]; then
   source "$(brew --prefix)/etc/bash_completion.d/hub.bash_completion.sh"
 fi
 
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-if [ -f "$HOME/.config/yarn/global/node_modules/tabtab/.completions/serverless.bash" ]; then
-  source "$HOME/.config/yarn/global/node_modules/tabtab/.completions/serverless.bash"
-fi
+##
+## bash_history
+##
 
-# uninstall by removing these lines or running `tabtab uninstall sls`
-if [ -f "$HOME.config/yarn/global/node_modules/tabtab/.completions/sls.bash" ]; then
-  source "$HOME/.config/yarn/global/node_modules/tabtab/.completions/sls.bash"
-fi
+# Enable history expansion with space
+# E.g. typing !!<space> will replace the !! with your last command
+bind Space:magic-space
+
+# Use standard ISO 8601 timestamp
+# %F equivalent to %Y-%m-%d
+# %T equivalent to %H:%M:%S (24-hours format)
+export HISTTIMEFORMAT='%F %T '
+
+# keep history up to date, across sessions, in realtime | https://goo.gl/MyufAc
+export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear"
+export HISTCONTROL="erasedups:ignoreboth"  # no duplicate entries
+export HISTSIZE=100000                     # big big history (default is 500)
+export HISTFILESIZE=$HISTSIZE              # big big history
+shopt -s histappend                        # append to history, don't overwrite it
+shopt -s cmdhist                           # save multi-line commands as one command
+
+# save and reload the history after each command finishes
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+##
+## better `cd`'ing
+##
 
 # Autocorrect on directory names to match a glob.
 shopt -s dirspell 2> /dev/null
@@ -47,14 +69,3 @@ shopt -s nocaseglob;
 
 # Correct spelling errors in arguments supplied to cd
 shopt -s cdspell;
-
-# If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-  PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u \w\a\]$PS1"
-  ;;
-*)
-  ;;
-esac
-
-
