@@ -21,6 +21,6 @@ eval "$(gdircolors -b ~/.dircolors)" # exports LS_COLORS
 
 # PATH SETUP
 export JAVA_HOME=$(/usr/libexec/java_home)
-PATH=$HOME/bin:$PATH
+PATH=$HOME/.bin:$PATH
 PATH=$JAVA_HOME/bin:$PATH
 export PATH
