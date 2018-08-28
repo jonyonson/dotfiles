@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "create-react-app": "^1.5.2",
+    "gatsby-cli": "^1.1.58",
+    "http-server": "^0.11.1",
+    "netlify-cli": "^1.2.3",
+    "parcel": "^1.9.7",
+    "trash-cli": "^1.4.0"
+  }
+}
