@@ -32,6 +32,7 @@ brew "fish"
 brew "git"
 brew "graphviz" #1
 brew "hub"
+brew "lastpass-cli", args: ["with-pinentry"]
 brew "mas" #2
 brew "python3"
 brew "the_silver_searcher" #3
@@ -52,10 +53,10 @@ brew "youtube-dl"
 # Homebrew installed macOS Applications
 # =====================================
 cask_args appdir: "/Applications"
+cask "adobe-acrobat-reader"
 cask "alfred"
 cask "carbon-copy-cloner"
 cask "dash"
-cask "dropbox"
 cask "figma"
 cask "firefox"
 cask "firefox-developer-edition"
@@ -80,11 +81,11 @@ cask "font-hack"
 
 # macOS App Store Apps
 # ===================================
-mas "LastPass", id: 926036361
-mas "Pocket", id: 568494494
+mas "GIPHY CAPTURE", id: 668208984
+mas "Spark", id: 1176895641
 mas "Todoist", id: 585829637
 mas "Xcode", id: 497799835
-mas "Spark", id: 1176895641
-mas "GIPHY CAPTURE", id: 668208984
+# mas "Pocket", id: 568494494
+# mas "LastPass", id: 926036361
 # mas "Numbers", id: 409203825
 # mas "Pages", id: 409201541
