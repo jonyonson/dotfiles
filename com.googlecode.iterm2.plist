@@ -2845,7 +2845,7 @@
 	<key>NSFontPanelSizeSliderParams</key>
 	<string>0 0 100</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Desktop/mbadolato-iTerm2-Color-Schemes-7d01cd1/schemes</string>
+	<string>~/.dotfiles</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{910, 448}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
@@ -2893,13 +2893,13 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 154 606 469 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1336 423 918 512 0 0 2560 1418 </string>
+	<string>1336 541 796 486 0 0 2560 1418 </string>
 	<key>NSWindow Frame com.apple.typography_panel_AndaleMono</key>
 	<string>479 733 260 46 0 0 2560 1417 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Menlo-Regular</key>
 	<string>479 711 260 68 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>517 898 730 477 0 0 2560 1418 </string>
+	<string>900 782 730 477 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1476 505 810 502 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
@@ -3657,7 +3657,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/jonathan/Projects/dotfiles</string>
+	<string>/Users/jonathan/.dotfiles</string>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -3671,7 +3671,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-08-29T06:21:53Z</date>
+	<date>2018-09-12T12:49:05Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
