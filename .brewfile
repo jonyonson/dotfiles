@@ -53,7 +53,7 @@ brew "youtube-dl"
 # Homebrew installed macOS Applications
 # =====================================
 cask_args appdir: "/Applications"
-cask "adobe-acrobat-reader"
+# cask "adobe-acrobat-reader"
 cask "alfred"
 cask "carbon-copy-cloner"
 cask "dash"
