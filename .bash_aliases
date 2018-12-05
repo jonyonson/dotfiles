@@ -27,7 +27,7 @@ alias l.='ls -A ${color}'         # Show hidden files
 alias ll.='ls -Aho ${color}'      # Show hidden files in long format
 
 # git
-alias git="hub"
+eval "$(hub alias -s)" # alias git="hub"
 alias g="git"
 alias push="git push"
 alias undopush="git push -f origin HEAD^:master" # undo a `git push`

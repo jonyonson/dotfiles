@@ -31,13 +31,15 @@
   untracked = cyan
 
 [core]
-	editor = code --wait
   excludesfile = ~/.gitignore
   pager = diff-so-fancy | less --tabs=4 -RFX
+  editor = /usr/local/bin/vim
+
+[credential]
+	helper = osxkeychain
 
 # use separate file for username / github token / etc
 [include]
   path = ~/.gitconfig.local
 
-[credential]
-	helper = osxkeychain
+
