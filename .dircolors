@@ -49,7 +49,6 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 *NOTICE               38;5;220;1
 *CHANGES              38;5;220;1
 .log                  38;5;190
-.txt                  38;5;253 # plain-text
 
 # markup
 .etx                  38;5;184
@@ -85,44 +84,44 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .mobi                 38;5;141
 .epub                 38;5;141
 
-# words
-.docm                 38;5;111;4
-.doc                  38;5;111
-.docx                 38;5;111
-.eps                  38;5;111
-.ps                   38;5;111
-.odb                  38;5;111
-.odt                  38;5;111
-.rtf                  38;5;111
+# text
+.doc                  38;5;111   # Word 97-2003 Document
+.docm                 38;5;111;4 # Word Macro-Enabled Document
+.docx                 38;5;111   # Word Document
+.dot                  38;5;111   # Word 97-2003 Template
+.dotm                 38;5;111   # Word Macro-Enabled Template
+.dotx                 38;5;111   # Word Template
+.odt                  38;5;111   # OpenDocument Text
+.rtf                  38;5;111   # Rich Text Fromat
+.txt                  38;5;253   # plain-text
 
 # presentation
-.odp                  38;5;166
-.pps                  38;5;166
-.ppt                  38;5;166
-.pptx                 38;5;166
-.ppts                 38;5;166   # powerpoint show
-.pptxm                38;5;166;4 # powerpoint with enabled macros
-.pptsm                38;5;166;4 # powerpoint show with enabled macros
+.pptx                 38;5;166   # PowerPoint Presentation
+.pptm                 38;5;166   # PowerPoint Macro-Enabled Presentation
+.ppt                  38;5;166   # PowerPoint 97-2003 Presentation
+.potx                 38;5;166   # PowerPoint Design Template
+.potm                 38;5;166   # PowerPoint Macro-Enabled Design Template
+.pot                  38;5;166   # PowerPoint 97-2003 Design Template
+.ppsx                 38;5;166   # PowerPoint Show
+.ppsm                 38;5;166   # PowerPoint Macro-Enabled Show
+.pps                  38;5;166   # PowerPoint 97-2003 Show
+.odp                  38;5;166   # OpenDocument Presentation
 
-## SPREADSHEET
-.csv                  38;5;78
+# spreadsheets
+.xlsx                 38;5;112   # Excel Workbook
+.xlsm                 38;5;112;4 # Excel Macro-Enabled Workbook
+,xlsb                 38;5;112   # Excel Binary Workbook
+.xltx                 38;5;73    # Excel Template
+.xltm                 38;5;73;4  # Excel Macro-Enabled Template
+.xls                  38;5;112   # Excel 97-2003 Workbook
+.xlt                  38;5;112   # Excel 97-2003 Template
+.ods                  38;5;112   # Open Document Spreadsheet
+.csv                  38;5;78    # comma-separated values
+.tsv                  38;5;78    # tab-separated values
 
-# open document spreadsheet
-.ods                  38;5;112
-.xla                  38;5;76
-
-# excel spreadsheet
-.xls                  38;5;112
-.xlsx                 38;5;112
-
-# excel spreadsheet with macros
-.xlsxm                38;5;112;4
-
-# excel module
-.xltm                 38;5;73;4
-.xltx                 38;5;73
 
 # configs
+.config               1
 *cfg                  1
 *conf                 1
 *rc                   1
@@ -132,7 +131,7 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 # vim
 .viminfo              1
 
-.pcf                  1 # cisco VPN client configuration
+.pcf                  1 # cisco VPN client configuration`
 .psf                  1 # adobe photoshop proof settings file
 
 # version control
@@ -309,6 +308,7 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .JPG                  38;5;97
 .jpg                  38;5;97
 .nth                  38;5;97
+.odg                  38;5;97
 .png                  38;5;97
 .psd                  38;5;97
 .xpm                  38;5;97
@@ -735,3 +735,4 @@ TERM xterm-debian
 .brewfile              1
 .hushlogin             1
 
+# dropbox
