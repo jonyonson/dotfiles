@@ -62,3 +62,17 @@ function myip() {
   ifconfig | \
     sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'
 }
+
+function hideDesktop() {
+  defaults write com.apple.finder CreateDesktop -bool false
+  osascript -e 'tell application "Finder" to quit'
+  sleep 0.25
+  osascript -e 'tell application "Finder" to activate'
+}
+
+function showDesktop() {
+  defaults write com.apple.finder CreateDesktop -bool true
+  osascript -e 'tell application "Finder" to quit'
+  sleep 0.25
+  osascript -e 'tell application "Finder" to activate'
+}
