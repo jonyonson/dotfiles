@@ -33,8 +33,6 @@ alias push="git push"
 alias undopush="git push -f origin HEAD^:master" # undo a `git push`
 
 # vim
-alias v="vim"
-alias gv="gvim" #macvim
 alias rmswap="find $HOME/.vim/swaps -name '*.sw[a-z]' | xargs rm" # remove vim swap files
 
 # npm
@@ -44,8 +42,8 @@ alias npm.leaves="npm ls --depth=0 -g"
 alias cask="brew cask"
 
 # show/hide hidden files in Finder
-alias showdots="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hidedots="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+# alias showdots="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+# alias hidedots="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # show/hide all desktop icons
 alias clutter="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
