@@ -53,6 +53,7 @@ brew "youtube-dl"
 # Homebrew installed macOS Applications
 # =====================================
 cask_args appdir: "/Applications"
+cask "adobe-acrobat-reader"
 cask "alfred"
 cask "carbon-copy-cloner"
 cask "dash"
@@ -69,12 +70,9 @@ cask "slack"
 cask "spotify"
 cask "vlc"
 cask "visual-studio-code"
-# cask "adobe-acrobat-reader"
 # cask "figma"
 # cask "firefox-developer-edition"
 # cask "google-chrome-canary"
-
-
 
 # Homebrew installed fonts
 # ===================================
@@ -84,6 +82,7 @@ cask "font-hack"
 
 # macOS App Store Apps
 # ===================================
+mas "Agenda", id: 1287445660
 mas "GIPHY CAPTURE", id: 668208984
 mas "Spark", id: 1176895641
 mas "Xcode", id: 497799835
