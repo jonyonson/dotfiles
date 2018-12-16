@@ -7,24 +7,28 @@ for file in ~/.{exports,bash_aliases,functions,bash_prompt,env}; do
 done
 unset file
 
-# https://github.com/creationix/nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
-
-[ -r $NVM_DIR/bash_completion ] && source $NVM_DIR/bash_completion
-
 # bash completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
-# bash_history
-# Enable history expansion with space
-# E.g. typing !!<space> will replace the !! with your last command
-bind Space:magic-space
+# https://github.com/creationix/nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -r $NVM_DIR/bash_completion ] && source $NVM_DIR/bash_completion
 
-# Use standard ISO 8601 timestamp
-# %F equivalent to %Y-%m-%d
-# %T equivalent to %H:%M:%S (24-hours format)
+
+## LS OUTPUT COLOR SETUP ##
+## --------------------- ##
+
+# use gnu `ls` if installed -- `brew install coreutils`
+command -v gdircolors >/dev/null 2>&1 || alias gdircolors="dircolors"
+
+# exports LS_COLORS
+eval "$(gdircolors -b ~/.dircolors)" # http://github.com/trapd00r/LS_COLORS
+
+## BASH HISTRORY ##
+## ------------- ##
+
+# use standard ISO 8601 timestamp
 export HISTTIMEFORMAT='%F %T '
 
 # keep history up to date, across sessions, in realtime | https://goo.gl/MyufAc
@@ -38,18 +42,20 @@ shopt -s cmdhist                           # save multi-line commands as one com
 # save and reload the history after each command finishes
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
-##
-## better `cd`'ing
-##
+# `!!<space>` will call the last command
+bind Space:magic-space
 
-# Autocorrect on directory names to match a glob.
+## AM IMPROVED `cd` COMMAND ##
+## ----------------------- ##
+
+# autocorrect on directory names to match a glob
 shopt -s dirspell 2> /dev/null
 
 # recursive globbing (enables ** to recurse all dirs)
 shopt -s globstar 2> /dev/null
 
-# Case-insensitive globbing (used in pathname expansion)
+# case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 
-# Correct spelling errors in arguments supplied to cd
+# correct spelling errors in arguments supplied to cd
 shopt -s cdspell;
