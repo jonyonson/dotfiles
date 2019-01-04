@@ -20,7 +20,8 @@ hash gls >/dev/null 2>&1 || alias gls="ls"
 if gls --color > /dev/null 2>&1; then color="--color"; else color="-G"; fi;
 export CLICOLOR_FORCE=1
 
-alias ls='gls -N ${color}'
+# alias ls='gls -N ${color}'
+alias ls='gls --literal --indicator-style=classify ${color}'
 alias lsd='ls -l | grep "^d"'     # only directories
 alias ll='ls -oh ${color}'        # long format (without group id)
 alias l.='ls -A ${color}'         # Show hidden files
@@ -42,12 +43,12 @@ alias npm.leaves="npm ls --depth=0 -g"
 alias cask="brew cask"
 
 # show/hide hidden files in Finder
-# alias showdots="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-# alias hidedots="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+alias showdotfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hidedotfiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # show/hide all desktop icons
-alias clutter="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-alias declutter="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 
 # recursively remove '.DS_Store' files | https://goo.gl/YH43N2
 alias ds_store.delete="find . -name '.DS_Store' -type f -delete"

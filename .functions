@@ -26,31 +26,9 @@ function manp() {
   man -t $1 | open -f -a /Applications/Preview.app
 }
 
-# Show normally hidden system and dotfile types of files
-# in Mac OS Finderbvvcvcvx cvxcvx
-function showdotfiles() {
-  defaults write com.apple.finder AppleShowAllFiles -bool true
-  osascript -e 'tell application "Finder" to quit'
-  sleep 0.25
-  osascript -e 'tell application "Finder" to activate'
-}
-
-# Hide (back to defaults) normally hidden system and dotfile types of files
-# in Mac OS Finder
-function hidedotfiles() {
-  defaults write com.apple.finder AppleShowAllFiles -bool false
-  osascript -e 'tell application "Finder" to quit'
-  sleep 0.25
-  osascript -e 'tell application "Finder" to activate'
-}
-
 ## output directory/file tree, excluding ignorables
 function tre(){
   tree -aC -I '.git|node_modules|bower_components|.DS_Store' --dirsfirst "$@"
-}
-
-function weather() {
-  curl wttr.in/$1
 }
 
 function ipinfo(){
@@ -61,6 +39,20 @@ function ipinfo(){
 function myip() {
   ifconfig | \
     sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'
+}
+
+function showDotfiles() {
+  defaults write com.apple.finder AppleShowAllFiles -bool true
+  osascript -e 'tell application "Finder" to quit'
+  sleep 0.25
+  osascript -e 'tell application "Finder" to activate'
+}
+
+function hideDotfiles() {
+  defaults write com.apple.finder AppleShowAllFiles -bool false
+  osascript -e 'tell application "Finder" to quit'
+  sleep 0.25
+  osascript -e 'tell application "Finder" to activate'
 }
 
 function hideDesktop() {
