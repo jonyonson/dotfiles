@@ -1,5 +1,4 @@
-# https://github.com/Homebrew/homebrew-bundle
-
+# https://github.com/Homebrew/homebrew-bundle 
 # mv ~/.brewfile to ~/Brewfile in order to run any `brew bundle` command
 
 # Install all formulae listed in ~/Brewfile
@@ -22,7 +21,7 @@ tap "martido/brew-graph"
 # Homebrew installed packages
 # ===================================
 brew "bash"
-brew "bash-completion@2"
+brew "bash-completion"
 brew "brew-cask-completion"
 brew "brew-graph" #1
 brew "coreutils"
@@ -53,7 +52,6 @@ brew "youtube-dl"
 # Homebrew installed macOS Applications
 # =====================================
 cask_args appdir: "/Applications"
-cask "adobe-acrobat-reader"
 cask "alfred"
 cask "carbon-copy-cloner"
 cask "dash"
@@ -70,6 +68,7 @@ cask "slack"
 cask "spotify"
 cask "vlc"
 cask "visual-studio-code"
+cask "adobe-acrobat-reader"
 # cask "figma"
 # cask "firefox-developer-edition"
 # cask "google-chrome-canary"

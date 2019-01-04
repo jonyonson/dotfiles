@@ -7,8 +7,8 @@ for file in ~/.{exports,bash_aliases,functions,bash_prompt,env}; do
 done
 unset file
 
-# bash completion
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+# BASH COMPLETION `brew install bash-completion`
+[ -f /usr/local/etc/bash_completion ] && source /usr/local/etc/bash_completion
 
 # https://github.com/creationix/nvm
 export NVM_DIR="$HOME/.nvm"

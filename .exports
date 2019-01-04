@@ -1,8 +1,9 @@
 #  ~/.exports
 #==========================================
 
+export NVM_DIR="$HOME/.nvm"
 export EDITOR="vim"
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+# export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export MANPAGER="less -s -M +Gg" # https://goo.gl/ja41XS
 export LESS="-F -i -J -M -R -W -x4 -X -z-4" # https://goo.gl/3ckgeg
 
