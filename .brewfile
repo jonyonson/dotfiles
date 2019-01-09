@@ -1,4 +1,4 @@
-# https://github.com/Homebrew/homebrew-bundle 
+# https://github.com/Homebrew/homebrew-bundle
 # mv ~/.brewfile to ~/Brewfile in order to run any `brew bundle` command
 
 # Install all formulae listed in ~/Brewfile
@@ -26,20 +26,23 @@ brew "brew-cask-completion"
 brew "brew-graph" #1
 brew "coreutils"
 brew "diff-so-fancy"
-brew "findutils", args: ["with-default-names"]
 brew "fish"
 brew "git"
 brew "graphviz" #1
 brew "hub"
 brew "lastpass-cli", args: ["with-pinentry"]
 brew "mas" #2
+brew "pyton2"
 brew "python3"
 brew "the_silver_searcher" #3
+brew "rbenv"
 brew "tree"
 brew "vim"
 brew "wget"
 brew "yarn", args: ["without-node"]
 brew "youtube-dl"
+# brew "findutils", args: ["with-default-names"]
+
 
 # Usage
 # ===================================
@@ -61,17 +64,12 @@ cask "google-chrome"
 cask "hyper"
 cask "iterm2"
 cask "kindle"
-cask "macvim"
 cask "mongodb-compass"
 cask "now"
 cask "slack"
 cask "spotify"
 cask "vlc"
 cask "visual-studio-code"
-cask "adobe-acrobat-reader"
-# cask "figma"
-# cask "firefox-developer-edition"
-# cask "google-chrome-canary"
 
 # Homebrew installed fonts
 # ===================================
