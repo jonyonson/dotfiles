@@ -1,24 +1,30 @@
-[alias]
-  c = commit -am
-  s = status
-  co = checkout
+#  ~/..gitconfig
+#==========================================
+
+[diff-so-fancy]
+	markEmptyLines = false
+	changHunkIndicators = false
+	stripLeadingSymbols = false
+	useUnicodeRuler = false
+	rulerWidth = 47
+	first-run = false
 
 [color]
-  ui = always
-
-[color "diff"]
-  meta = yellow bold
-  commit = green bold
-  frag = magenta bold
-  old = red bold
-  new = green bold
-  whitespace = red reverse
+	ui = true
 
 [color "diff-highlight"]
-  oldNormal = red bold
-  oldHighlight = red bold 52
-  newNormal = green bold
-  newHighlight = green bold 22
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
 
 [color "branch"]
   current = yellow bold
@@ -32,8 +38,8 @@
 
 [core]
   excludesfile = ~/.gitignore
-  pager = diff-so-fancy | less --tabs=4 -RFX
-  editor = /usr/local/bin/vim
+	editor = vim
+	pager = diff-so-fancy | less --tabs=4 -RFX
 
 [credential]
 	helper = osxkeychain
@@ -43,3 +49,6 @@
   path = ~/.gitconfig.local
 
 
+[user]
+	email = jonyonson@icloud.com
+	name = Jonathan Taylor

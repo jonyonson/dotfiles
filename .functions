@@ -13,12 +13,7 @@ function mkd() {
 
 # find shorthand
 function f() {
-  find . -name "$1" 2>&1 | grep -v 'Permission denied'
-}
-
-# Create a new git repo with one README commit and CD into it
-function gitnr() {
-  mkdir $1; cd $1; git init; touch README; git add README; git commit -mFirst-commit;
+  find . -name "$1" 2>&1 | grep -v 'Operation not permitted'
 }
 
 # Use Mac OS Preview to open a man page in a more handsome format
@@ -67,4 +62,20 @@ function showDesktop() {
   osascript -e 'tell application "Finder" to quit'
   sleep 0.25
   osascript -e 'tell application "Finder" to activate'
+}
+
+
+# Create a new git repo with one README commit and CD into it
+function gitnr() {
+  mkdir $1; cd $1; git init; touch README; git add README; git commit -mFirst-commit;
+}
+
+function ghrepo() {
+  mkdir $1; cd $1;
+  # create a repo for a new project
+  git init
+  git add . && git commit -m "It begins."
+  hub create -d "My new thing"
+  # # → (creates a new project on GitHub with the name of current directory)
+  git push origin master
 }

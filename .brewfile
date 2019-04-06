@@ -32,21 +32,20 @@ brew "graphviz" #1
 brew "hub"
 brew "lastpass-cli", args: ["with-pinentry"]
 brew "mas" #2
-brew "pyton2"
-brew "python3"
+brew "python"
 brew "the_silver_searcher" #3
-brew "rbenv"
 brew "tree"
+brew "trash"
 brew "vim"
 brew "wget"
-brew "yarn", args: ["without-node"]
+brew "yarn", args: ["ignore-dependencies"]
 brew "youtube-dl"
 # brew "findutils", args: ["with-default-names"]
 
 
 # Usage
 # ===================================
-#1 $ brew graph --installed --highlight-leaves | fdp -Tpng -ograph.png
+#1 $ brew graph --installed --highlight-leaves | fdp -Tpng -ograph.png && open graph.png
 #1 $ open graph.png
 #2 https://github.com/mas-cli/mas
 #3 http://geoff.greer.fm/ag
@@ -61,6 +60,7 @@ cask "dash"
 cask "dropbox"
 cask "firefox"
 cask "google-chrome"
+cask "graphql-playground"
 cask "hyper"
 cask "iterm2"
 cask "kindle"
@@ -79,12 +79,10 @@ cask "font-hack"
 
 # macOS App Store Apps
 # ===================================
-mas "Agenda", id: 1287445660
 mas "GIPHY CAPTURE", id: 668208984
 mas "Spark", id: 1176895641
-mas "Xcode", id: 497799835
 mas "LastPass", id: 926036361
-# mas "Pocket", id: 568494494
-# mas "Todoist", id: 585829637
-# mas "Numbers", id: 409203825
+mas "Xcode", id: 497799835
 # mas "Pages", id: 409201541
+mas "SppedTest", id: 1153157709
+

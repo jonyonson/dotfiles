@@ -7,14 +7,13 @@ for file in ~/.{exports,bash_aliases,functions,bash_prompt,env}; do
 done
 unset file
 
-# BASH COMPLETION `brew install bash-completion`
+# `brew install bash-completion`
 [ -f /usr/local/etc/bash_completion ] && source /usr/local/etc/bash_completion
 
 # https://github.com/creationix/nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -r $NVM_DIR/bash_completion ] && source $NVM_DIR/bash_completion
-
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 ## LS OUTPUT COLOR SETUP ##
 ## --------------------- ##
@@ -34,7 +33,7 @@ export HISTTIMEFORMAT='%F %T '
 # keep history up to date, across sessions, in realtime | https://goo.gl/MyufAc
 export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear"
 export HISTCONTROL="erasedups:ignoreboth"  # no duplicate entries
-export HISTSIZE=100000                     # big big history (default is 500)
+export HISTSIZE=-1                         # big big history (default is 500)
 export HISTFILESIZE=$HISTSIZE              # big big history
 shopt -s histappend                        # append to history, don't overwrite it
 shopt -s cmdhist                           # save multi-line commands as one command
@@ -45,8 +44,8 @@ export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 # `!!<space>` will call the last command
 bind Space:magic-space
 
-## AM IMPROVED `cd` COMMAND ##
-## ----------------------- ##
+## IMPROVED `cd` COMMAND ##
+## --------------------- ##
 
 # autocorrect on directory names to match a glob
 shopt -s dirspell 2> /dev/null

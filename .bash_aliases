@@ -20,41 +20,38 @@ hash gls >/dev/null 2>&1 || alias gls="ls"
 if gls --color > /dev/null 2>&1; then color="--color"; else color="-G"; fi;
 export CLICOLOR_FORCE=1
 
-# alias ls='gls -N ${color}'
-alias ls='gls --literal --indicator-style=classify ${color}'
+alias ls='gls -N ${color}'
 alias lsd='ls -l | grep "^d"'     # only directories
 alias ll='ls -oh ${color}'        # long format (without group id)
 alias l.='ls -A ${color}'         # Show hidden files
 alias ll.='ls -Aho ${color}'      # Show hidden files in long format
 
+# https://tinyurl.com/y8syjq3c
+alias wget="wget --hsts-file ~/.config/wget/wget-hsts"
+
 # git
 eval "$(hub alias -s)" # alias git="hub"
-alias g="git"
-alias push="git push"
-alias undopush="git push -f origin HEAD^:master" # undo a `git push`
+alias undo_push="git push -f origin HEAD^:master" # undo a `git push`
+
+# npm / yarn global packages
+alias npm_leaves="npm ls --depth=0 -g"
+alias yarn_leaves="yarn global list"
+
+# print homebrew depenency graph
+alias brew_graph="brew-graph --installed --highlight-leaves | dot -T png -o ~/brew-graph.png && open ~/brew-graph.png"
 
 # vim
-alias rmswap="find $HOME/.vim/swaps -name '*.sw[a-z]' | xargs rm" # remove vim swap files
-
-# npm
-alias npm.leaves="npm ls --depth=0 -g"
-
-# homebrew
-alias cask="brew cask"
+alias rm_swaps="find $HOME/.vim/swaps -name '*.sw[a-z]' | xargs rm" # remove vim swap files
 
 # show/hide hidden files in Finder
-alias showdotfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hidedotfiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+alias show_dotfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide_dotfiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # show/hide all desktop icons
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias show_desktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+alias hide_desktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 
 # recursively remove '.DS_Store' files | https://goo.gl/YH43N2
-alias ds_store.delete="find . -name '.DS_Store' -type f -delete"
+alias ds_store_delete="find . -name '.DS_Store' -type f -delete 2>&1 | grep -v 'Operation not permitted'"
 
-# ssh
-alias copy_ssh='pbcopy < ~/.ssh/id_rsa.pub'
 
-# empty trash
-alias emptytrash="rm -rf ~/.Trash"
