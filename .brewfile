@@ -32,6 +32,7 @@ brew "graphviz" #1
 brew "hub"
 brew "lastpass-cli", args: ["with-pinentry"]
 brew "mas" #2
+brew "mongodb"
 brew "python"
 brew "the_silver_searcher" #3
 brew "tree"
@@ -64,6 +65,7 @@ cask "graphql-playground"
 cask "hyper"
 cask "iterm2"
 cask "kindle"
+cask "launchrocket"
 cask "mongodb-compass"
 cask "now"
 cask "slack"
