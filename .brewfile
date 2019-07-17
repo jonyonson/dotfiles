@@ -17,6 +17,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "martido/brew-graph"
+tap "sass/sass"
 
 # Homebrew installed packages
 # ===================================
@@ -34,6 +35,7 @@ brew "lastpass-cli", args: ["with-pinentry"]
 brew "mas" #2
 brew "mongodb"
 brew "python"
+brew "sass/sass/sass"
 brew "the_silver_searcher" #3
 brew "tree"
 brew "trash"
@@ -85,6 +87,7 @@ mas "GIPHY CAPTURE", id: 668208984
 mas "Spark", id: 1176895641
 mas "LastPass", id: 926036361
 mas "Xcode", id: 497799835
-# mas "Pages", id: 409201541
-mas "SppedTest", id: 1153157709
+mas "Pages", id: 409201541
+mas "Numbers", id: 409203825
+mas "SpeedTest", id: 1153157709
 
