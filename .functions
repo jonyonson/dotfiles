@@ -74,8 +74,12 @@ function ghrepo() {
   mkdir $1; cd $1;
   # create a repo for a new project
   git init
-  git add . && git commit -m "It begins."
+  git add . && git commit -m "initial commit"
   hub create -d "My new thing"
   # # → (creates a new project on GitHub with the name of current directory)
   git push origin master
+}
+
+function clone_branch() {
+  git clone $1 --branch $2 --single-branch;
 }
