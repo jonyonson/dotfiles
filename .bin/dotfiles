@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
 
 DOTFILES_DIR="${HOME}/.dotfiles"
-
-cd ${DOTFILES_DIR}
+LOCAL_DOTFILES="${HOME}/.dotfiles.local"
 
 link() {
   # Force create/replace the symlink
   ln -fs "${DOTFILES_DIR}/${1}" "${HOME}/${1}"
 }
+
+# add a check to see if directory exists first
+cd ${DOTFILES_DIR}
 
 link ".bash_aliases"
 link ".bash_profile"
@@ -20,5 +22,11 @@ link ".exports"
 link ".functions"
 link ".hushlogin"
 link ".inputrc"
+
+# add a check to see if directory exists first
+cd ${LOCAL_DOTFILES}
+
+ln -fs ~/.dotfiles.local/.env ~/.env
+ln -fs ~/.dotfiles.local/.gitconfig.local ~/.gitconfig.local
 
 echo "Dotfiles update complete!"
