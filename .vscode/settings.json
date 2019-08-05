@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    ".bash*": "shellscript",
+    ".exports*": "shellscript",
+    ".functions": "shellscript",
+    ".brewfile": "shellscript",
+    ".inputrc": "shellscript",
+    ".dircolors": "shellscript",
+    "dircolors.bak": "shellscript"
+  }
+}
