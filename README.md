@@ -7,20 +7,19 @@ macOS config files for bash, vim, git, etc.
 ### Install all formulae listed in `.brewfile`
 
 ```sh
-$ mv ~/.brewfile ~/Brewfile
-$ brew bundle
+$ brew bundle --file=~/.brewfile
 ```
 
 ### Output a list of any installed Homebrew formulae not listed in Brewfile:
 
 ```sh
-$ brew bundle cleanup
+$ brew bundle cleanup --file=~/.brewfile
 ```
 
 ### Pass the --force option to this command to uninstall these formulae:
 
 ```sh
-$ brew bundle cleanup --force
+$ brew bundle cleanup --force --file=~/.brewfile
 ```
 
 ### Acknowledgements
