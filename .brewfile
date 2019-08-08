@@ -83,11 +83,11 @@ cask "font-hack"
 
 # macOS App Store Apps
 # ===================================
+mas "ColorSlurp", id: 1287239339
 mas "GIPHY CAPTURE", id: 668208984
-mas "Spark", id: 1176895641
 mas "LastPass", id: 926036361
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft Word", id: 462054704
+mas "Spark", id: 1176895641
+mas "Speedtest", id: 1153157709
 mas "Xcode", id: 497799835
-mas "Pages", id: 409201541
-mas "Numbers", id: 409203825
-mas "SpeedTest", id: 1153157709
-
