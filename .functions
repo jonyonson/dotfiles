@@ -1,4 +1,4 @@
-# ~/.functions for macOS and Ubuntu
+# ~/.functions
 # =================================
 
 function serve() {

@@ -36,6 +36,7 @@ brew "mas" #2
 brew "mongodb"
 brew "python"
 brew "sass/sass/sass"
+brew "speedtest-cli"
 brew "the_silver_searcher" #3
 brew "tree"
 brew "trash"
