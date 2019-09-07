@@ -17,5 +17,6 @@ export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
 # PATH SETUP
 PATH=$HOME/.bin:$PATH
+PATH="$HOME/Library/Python/3.7/bin:$PATH"
 PATH="/usr/local/opt/python/libexec/bin:$PATH" # Python 3
 export PATH
