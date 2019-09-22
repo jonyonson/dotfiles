@@ -7,6 +7,9 @@ for file in ~/.{exports,bash_aliases,functions,bash_prompt,env}; do
 done
 unset file
 
+# https://github.com/rupa/z
+source ~/.dotfiles/z.sh
+
 # `brew install bash-completion`
 [ -f /usr/local/etc/bash_completion ] && source /usr/local/etc/bash_completion
 
