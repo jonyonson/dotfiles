@@ -80,6 +80,16 @@ function ghrepo() {
   git push origin master
 }
 
-function clone_branch() {
+function clonebranch() {
   git clone $1 --branch $2 --single-branch;
+}
+
+function clone_branch() {
+    git clone $1 --branch $2 --single-branch;
+}
+
+# takes a port and ends the process running on that port
+function killport() {
+    pid=$(lsof -i:$1 -t);
+    kill -TERM $pid || kill
 }
