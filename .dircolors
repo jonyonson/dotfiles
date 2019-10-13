@@ -737,6 +737,7 @@ TERM xterm-debian
 .bash_aliases          38;5;172
 .bash_prompt           38;5;172
 .bash_profile          38;5;172
+.bashrc                38;5;172
 *profile               38;5;172
 .profile               38;5;172
 .editorconfig          1
@@ -745,9 +746,8 @@ TERM xterm-debian
 .brewfile              38;5;220;1
 *Brewfile              38;5;220;1
 
-
 # history files
 *history                38;5;97
-# .lesshst                38;5;97
 *hst                    38;5;97
 *hsts                   38;5;97
+
