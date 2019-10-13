@@ -17,7 +17,7 @@ export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
 export JDK8=/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home
 export JDK11=/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home
-export JAVA_VERSION=$JDK8
+export JAVA_VERSION=$JDK11
 export JAVA_HOME=$JAVA_VERSION
 
 # PATH SETUP
