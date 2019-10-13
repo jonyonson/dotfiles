@@ -1,14 +1,13 @@
 # https://github.com/Homebrew/homebrew-bundle
-# mv ~/.brewfile to ~/Brewfile in order to run any `brew bundle` command
 
 # Install all formulae listed in ~/Brewfile
-# $ brew bundle --file ~/.brewfile
+# $ brew bundle --file
 
 # Output a list of any installed Homebrew formulae not listed in Brewfile:
-# $ brew bundle cleanup --file ~/.brewfile
+# $ brew bundle cleanup --file
 
 # Pass the --force option to this command to uninstall these formulae:
-# $ brew bundle cleanup --force --file ~/.brewfile
+# $ brew bundle cleanup --force --file
 
 # Homebrew Taps
 # ===================================
