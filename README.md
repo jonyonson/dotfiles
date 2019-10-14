@@ -1,6 +1,6 @@
-# JT's dotfiles
+## JT's dotfiles
 
-macOS config files for bash, vim, git, etc.
+Includes my setup/config shenanigans for macOS. This repo contains my shell configuration with aliases and helper functions, git config, homebrew stuff, etc.
 
 ### Run `.bin/dotfiles` to create/update symlinks
 
@@ -22,8 +22,16 @@ $ brew bundle cleanup
 $ brew bundle cleanup --force
 ```
 
+### Bookmarks
+
+-   [Creating a personal access token for the command line](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line)
+-   [Caching your GitHub password in Git](https://help.github.com/en/articles/caching-your-github-password-in-git)
+-   [Updating credentials from the OSX Keychain](https://help.github.com/en/articles/updating-credentials-from-the-osx-keychain)
+
+*   [Homebrew and Python](https://docs.brew.sh/Homebrew-and-Python)
+
 ### Acknowledgements
 
--   Paul Irish [(@paulirish)](https://github.com/paulirish) - [https://github.com/paulirish/dotfiles](https://github.com/paulirish/dotfiles)
+-   [Paul Irish](https://github.com/paulirish/dotfiles)
 
--   Nicolas Gallagher [(@necolas)](https://github.com/necolas) - [https://github.com/necolas/dotfiles](https://github.com/necolas/dotfiles)
+-   [Nicolas Gallagher](https://github.com/necolas/dotfiles)

@@ -1,21 +1,22 @@
 # https://github.com/Homebrew/homebrew-bundle
 
 # Install all formulae listed in ~/Brewfile
-# $ brew bundle --file
+# $ brew bundle
 
 # Output a list of any installed Homebrew formulae not listed in Brewfile:
-# $ brew bundle cleanup --file
+# $ brew bundle cleanup
 
 # Pass the --force option to this command to uninstall these formulae:
-# $ brew bundle cleanup --force --file
+# $ brew bundle cleanup --force
 
 # Homebrew Taps
 # ===================================
+tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
-tap "martido/brew-graph"
+tap "homebrew/services"
 tap "sass/sass"
 
 # Homebrew installed packages
@@ -23,36 +24,28 @@ tap "sass/sass"
 brew "bash"
 brew "bash-completion"
 brew "brew-cask-completion"
-brew "brew-graph" #1
 brew "coreutils"
 brew "diff-so-fancy"
 brew "fish"
 brew "git"
-brew "graphviz" #1
+brew "graphviz"
 brew "hub"
 brew "lastpass-cli", args: ["with-pinentry"]
-brew "mas" #2
-brew "mongodb"
+brew "mas" #https://github.com/mas-cli/mas
 brew "python"
-brew "sass/sass/sass"
 brew "speedtest-cli"
-brew "the_silver_searcher" #3
+brew "tomcat"
 brew "tree"
 brew "trash"
 brew "vim"
 brew "wget"
-brew "yarn", args: ["ignore-dependencies"]
 brew "youtube-dl"
-# brew "findutils", args: ["with-default-names"]
-
+brew "heroku/brew/heroku"
+brew "sass/sass/sass"
 
 # Usage
 # ===================================
 #1 $ brew graph --installed --highlight-leaves | fdp -Tpng -ograph.png && open graph.png
-#1 $ open graph.png
-#2 https://github.com/mas-cli/mas
-#3 http://geoff.greer.fm/ag
-#3 $ ag [FILE-TYPE] [OPTIONS] PATTERN [PATH]
 
 # Homebrew installed macOS Applications
 # =====================================
@@ -72,6 +65,7 @@ cask "mongodb-compass"
 cask "now"
 cask "slack"
 cask "spotify"
+cask "sqlitestudio"
 cask "vlc"
 cask "visual-studio-code"
 
