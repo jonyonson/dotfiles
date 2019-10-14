@@ -1,7 +1,7 @@
 # https://github.com/Homebrew/homebrew-bundle
 # $ `brew bundle` | installs all formulae listed in ~/Brewfile
-# $ `brew bundle cleanup` | Outputs all installed formulae not listed in Brewfile.
-# $ `brew bundle cleanup --force` | Removes all installed formulae not listed
+# $ `brew bundle cleanup` | lists all installed formulae not in Brewfile
+# $ `brew bundle cleanup --force` | removes installed formulae not in Brewfile
 
 # Homebrew Taps
 # ===================================
@@ -11,30 +11,26 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "sass/sass"
 
 # Homebrew installed packages
 # ===================================
 brew "bash"
-brew "bash-completion@2" # https://formulae.brew.sh/formula/bash-completion@2
-brew "brew-cask-completion"
+brew "bash-completion@2"  # https://formulae.brew.sh/formula/bash-completion@2
 brew "coreutils"
-brew "diff-so-fancy" # https://github.com/so-fancy/diff-so-fancy
+brew "diff-so-fancy"      # https://github.com/so-fancy/diff-so-fancy
 brew "fish"
 brew "git"
-brew "hub" # https://hub.github.com/
-brew "lastpass-cli", args: ["with-pinentry"]
-brew "mas" # https://github.com/mas-cli/mas
+brew "hub"                # https://hub.github.com/
+brew "mas"                # https://github.com/mas-cli/mas
 brew "python"
 brew "speedtest-cli"
 brew "tomcat"
 brew "tree"
 brew "trash"
 brew "vim"
-brew "wget" # https://www.gnu.org/software/wget/manual/wget.html
-brew "youtube-dl" # https://github.com/ytdl-org/youtube-dl
+brew "wget"               # https://www.gnu.org/software/wget/manual/wget.html
+brew "youtube-dl"         # https://github.com/ytdl-org/youtube-dl
 brew "heroku/brew/heroku" # https://devcenter.heroku.com/articles/heroku-cli
-brew "sass/sass/sass"
 
 # Homebrew installed macOS Applications
 # =====================================
