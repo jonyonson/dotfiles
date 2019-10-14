@@ -10,8 +10,11 @@ unset file
 # https://github.com/rupa/z
 source ~/.dotfiles/z.sh
 
-# `brew install bash-completion`
-[ -f /usr/local/etc/bash_completion ] && source /usr/local/etc/bash_completion
+# https://formulae.brew.sh/formula/bash-completion@2
+# https://github.com/scop/bash-completion
+ export BASH_COMPLETION_COMPAT_DIR="$(brew --prefix)/etc/bash_completion.d"
+[[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && \
+    . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
 
 # https://github.com/creationix/nvm
 export NVM_DIR="$HOME/.nvm"

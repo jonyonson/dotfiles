@@ -1,13 +1,7 @@
 # https://github.com/Homebrew/homebrew-bundle
-
-# Install all formulae listed in ~/Brewfile
-# $ brew bundle
-
-# Output a list of any installed Homebrew formulae not listed in Brewfile:
-# $ brew bundle cleanup
-
-# Pass the --force option to this command to uninstall these formulae:
-# $ brew bundle cleanup --force
+# $ `brew bundle` | installs all formulae listed in ~/Brewfile
+# $ `brew bundle cleanup` | Outputs all installed formulae not listed in Brewfile.
+# $ `brew bundle cleanup --force` | Removes all installed formulae not listed
 
 # Homebrew Taps
 # ===================================
@@ -22,30 +16,25 @@ tap "sass/sass"
 # Homebrew installed packages
 # ===================================
 brew "bash"
-brew "bash-completion"
+brew "bash-completion@2" # https://formulae.brew.sh/formula/bash-completion@2
 brew "brew-cask-completion"
 brew "coreutils"
-brew "diff-so-fancy"
+brew "diff-so-fancy" # https://github.com/so-fancy/diff-so-fancy
 brew "fish"
 brew "git"
-brew "graphviz"
-brew "hub"
+brew "hub" # https://hub.github.com/
 brew "lastpass-cli", args: ["with-pinentry"]
-brew "mas" #https://github.com/mas-cli/mas
+brew "mas" # https://github.com/mas-cli/mas
 brew "python"
 brew "speedtest-cli"
 brew "tomcat"
 brew "tree"
 brew "trash"
 brew "vim"
-brew "wget"
-brew "youtube-dl"
-brew "heroku/brew/heroku"
+brew "wget" # https://www.gnu.org/software/wget/manual/wget.html
+brew "youtube-dl" # https://github.com/ytdl-org/youtube-dl
+brew "heroku/brew/heroku" # https://devcenter.heroku.com/articles/heroku-cli
 brew "sass/sass/sass"
-
-# Usage
-# ===================================
-#1 $ brew graph --installed --highlight-leaves | fdp -Tpng -ograph.png && open graph.png
 
 # Homebrew installed macOS Applications
 # =====================================
@@ -58,11 +47,14 @@ cask "firefox"
 cask "google-chrome"
 cask "graphql-playground"
 cask "hyper"
+cask "insomnia"
+cask "intellij-idea"
 cask "iterm2"
 cask "kindle"
 cask "launchrocket"
 cask "mongodb-compass"
 cask "now"
+cask "postman"
 cask "slack"
 cask "spotify"
 cask "sqlitestudio"

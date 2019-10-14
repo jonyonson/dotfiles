@@ -30,6 +30,7 @@ $ brew bundle cleanup --force
 -   [Caching your GitHub password in Git](https://help.github.com/en/articles/caching-your-github-password-in-git)
 -   [Updating credentials from the OSX Keychain](https://help.github.com/en/articles/updating-credentials-from-the-osx-keychain)
 -   [Homebrew and Python](https://docs.brew.sh/Homebrew-and-Python)
+-   [bash-completion@2](https://formulae.brew.sh/formula/bash-completion@2)
 
 ### Acknowledgements
 
