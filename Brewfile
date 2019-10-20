@@ -15,22 +15,22 @@ tap "homebrew/services"
 # Homebrew installed packages
 # ===================================
 brew "bash"
-brew "bash-completion@2"  # https://formulae.brew.sh/formula/bash-completion@2
+brew "bash-completion@2"   # https://formulae.brew.sh/formula/bash-completion@2
 brew "coreutils"
-brew "diff-so-fancy"      # https://github.com/so-fancy/diff-so-fancy
+brew "diff-so-fancy"       # https://github.com/so-fancy/diff-so-fancy
 brew "fish"
 brew "git"
-brew "hub"                # https://hub.github.com/
-brew "mas"                # https://github.com/mas-cli/mas
-brew "python"
+brew "hub"                 # https://hub.github.com/
+brew "mas"                 # https://github.com/mas-cli/mas
+brew "python"              # https://docs.brew.sh/Homebrew-and-Python
 brew "speedtest-cli"
 brew "tomcat"
 brew "tree"
 brew "trash"
 brew "vim"
-brew "wget"               # https://www.gnu.org/software/wget/manual/wget.html
-brew "youtube-dl"         # https://github.com/ytdl-org/youtube-dl
-brew "heroku/brew/heroku" # https://devcenter.heroku.com/articles/heroku-cli
+brew "wget"                # https://www.gnu.org/software/wget/manual/wget.html
+brew "youtube-dl"          # https://github.com/ytdl-org/youtube-dl
+brew "heroku/brew/heroku"  # https://devcenter.heroku.com/articles/heroku-cli
 
 # Homebrew installed macOS Applications
 # =====================================
