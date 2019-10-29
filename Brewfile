@@ -36,7 +36,6 @@ brew "heroku/brew/heroku"  # https://devcenter.heroku.com/articles/heroku-cli
 # =====================================
 cask_args appdir: "/Applications"
 cask "alfred"
-cask "backblaze"
 cask "carbon-copy-cloner"
 cask "dash"
 cask "dropbox"
