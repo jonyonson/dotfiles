@@ -37,6 +37,7 @@ brew "heroku/brew/heroku"  # https://devcenter.heroku.com/articles/heroku-cli
 # =====================================
 cask_args appdir: "/Applications"
 cask "alfred"
+cask "db-browser-for-sqlite"
 cask "carbon-copy-cloner"
 cask "dash"
 cask "dropbox"
@@ -45,10 +46,8 @@ cask "google-chrome"
 cask "graphql-playground"
 cask "hyper"
 cask "insomnia"
-cask "intellij-idea"
 cask "iterm2"
 cask "kindle"
-cask "launchrocket"
 cask "mongodb-compass"
 cask "now"
 cask "postman"
@@ -66,7 +65,6 @@ cask "font-hack"
 
 # macOS App Store Apps
 # ===================================
-mas "ColorSlurp", id: 1287239339
 mas "GIPHY CAPTURE", id: 668208984
 mas "LastPass", id: 926036361
 mas "Microsoft Excel", id: 462058435
