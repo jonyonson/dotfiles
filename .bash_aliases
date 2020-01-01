@@ -57,4 +57,7 @@ alias hide_desktop="defaults write com.apple.finder CreateDesktop -bool false &&
 # recursively remove '.DS_Store' files | https://goo.gl/YH43N2
 alias ds_store_delete="find . -name '.DS_Store' -type f -delete 2>&1 | grep -v 'Operation not permitted'"
 
-
+# postgreSQL
+alias pg-start="pg_ctl -D /usr/local/var/postgres start"
+alias pg-stop="pg_ctl -D /usr/local/var/postgres stop"
+alias pg-restart="pg_ctl -D /usr/local/var/postgres restart"

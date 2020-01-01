@@ -22,6 +22,7 @@ brew "fish"
 brew "git"
 brew "hub"                 # https://hub.github.com/
 brew "mas"                 # https://github.com/mas-cli/mas
+brew "postgres"
 brew "pipenv"
 brew "python"              # https://docs.brew.sh/Homebrew-and-Python
 brew "speedtest-cli"
