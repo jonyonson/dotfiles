@@ -26,7 +26,6 @@ brew "postgres"
 brew "pipenv"
 brew "python"              # https://docs.brew.sh/Homebrew-and-Python
 brew "speedtest-cli"
-brew "tomcat"
 brew "tree"
 brew "trash"
 brew "vim"
