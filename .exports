@@ -25,9 +25,9 @@ PATH=~/.bin:$PATH
 PATH=/usr/local/opt/python/libexec/bin:$PATH
 PATH=~/.yarn/bin:$PATH
 PATH=~/.config/yarn/global/node_modules/.bin:$PATH
-# https://stackoverflow.com/questions/56796426/pipenv-consistently-failing-to-install-pyscopg2
-PATH="/usr/local/opt/openssl/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl/include"
-
+PATH=/usr/local/opt/openssl@1.1/bin:$PATH
 export PATH
+
+# https://stackoverflow.com/questions/56796426/pipenv-consistently-failing-to-install-pyscopg2
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
