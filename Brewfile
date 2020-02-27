@@ -42,7 +42,6 @@ cask "bfxr"                   # https://www.bfxr.net/
 cask "db-browser-for-sqlite"
 cask "carbon-copy-cloner"
 cask "dash"
-cask "dropbox"
 cask "firefox"
 cask "google-chrome"
 cask "graphql-playground"
