@@ -25,11 +25,10 @@ PATH="$HOME/.bin:$PATH"
 PATH="/usr/local/opt/python/libexec/bin:$PATH"
 PATH="$HOME/.yarn/bin:$PATH"
 PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-# PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
-# PATH="$HOME/nand2tetris/tools:$PATH"
 export PATH
 
+
 # https://stackoverflow.com/questions/56796426/pipenv-consistently-failing-to-install-pyscopg2
+# PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 # export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
 # export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
