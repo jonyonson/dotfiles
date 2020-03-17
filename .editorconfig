@@ -16,7 +16,7 @@ tab_width = 4
 [*.md]
 trim_trailing_whitespace = false
 
-[*.{js,jsx,json,html,css,scss,config.js}]
+[*.{js,jsx,json,html,css,scss,config.js,svelte}]
 indent_size = 2
 
 [Makefile]
