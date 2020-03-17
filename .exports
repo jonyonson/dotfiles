@@ -16,7 +16,7 @@ export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
 # Java
-export JDK8=/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home
+# export JDK8=/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home
 export JDK11=/Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home
 export JAVA_HOME=$JDK11
 
