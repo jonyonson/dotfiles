@@ -36,28 +36,28 @@ function myip() {
     sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'
 }
 
-function showDotfiles() {
+function showdotfiles() {
   defaults write com.apple.finder AppleShowAllFiles -bool true
   osascript -e 'tell application "Finder" to quit'
   sleep 0.25
   osascript -e 'tell application "Finder" to activate'
 }
 
-function hideDotfiles() {
+function hidedotfiles() {
   defaults write com.apple.finder AppleShowAllFiles -bool false
   osascript -e 'tell application "Finder" to quit'
   sleep 0.25
   osascript -e 'tell application "Finder" to activate'
 }
 
-function hideDesktop() {
+function hidedesktop() {
   defaults write com.apple.finder CreateDesktop -bool false
   osascript -e 'tell application "Finder" to quit'
   sleep 0.25
   osascript -e 'tell application "Finder" to activate'
 }
 
-function showDesktop() {
+function showdesktop() {
   defaults write com.apple.finder CreateDesktop -bool true
   osascript -e 'tell application "Finder" to quit'
   sleep 0.25
