@@ -64,19 +64,13 @@ function showdesktop() {
   osascript -e 'tell application "Finder" to activate'
 }
 
-
 # Create a new git repo with one README commit and CD into it
 function gitnr() {
   mkdir $1; cd $1; git init; touch README; git add README; git commit -mFirst-commit;
 }
 
-
 function clonebranch() {
   git clone $1 --branch $2 --single-branch;
-}
-
-function clone_branch() {
-    git clone $1 --branch $2 --single-branch;
 }
 
 # takes a port and ends the process running on that port
