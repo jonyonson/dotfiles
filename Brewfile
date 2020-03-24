@@ -20,6 +20,7 @@ brew "coreutils"
 brew "diff-so-fancy"       # https://github.com/so-fancy/diff-so-fancy
 brew "fish"
 brew "git"
+brew "github/gh/gh"
 brew "golang"
 brew "hub"                 # https://hub.github.com/
 brew "mas"                 # https://github.com/mas-cli/mas
