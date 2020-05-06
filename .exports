@@ -1,6 +1,7 @@
 #  ~/.exports
 #==========================================
 
+export BAT_THEME="Nord" # https://github.com/sharkdp/bat/#customization
 export EDITOR="vim"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export MANPAGER="less -s -M +Gg" # https://goo.gl/ja41XS
