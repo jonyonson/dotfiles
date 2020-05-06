@@ -15,13 +15,16 @@ link ".bash_aliases"
 link ".bash_profile"
 link ".bash_prompt"
 link ".bashrc"
-link ".brewfile"
+link "Brewfile"
 link ".dircolors"
 link ".editorconfig"
 link ".exports"
 link ".functions"
 link ".hushlogin"
 link ".inputrc"
+link ".fzf.bash"
+link ".fzf.zsh"
+link ".zshrc"
 
 # add a check to see if directory exists first
 cd ${LOCAL_DOTFILES}
