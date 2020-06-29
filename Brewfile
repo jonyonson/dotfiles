@@ -23,6 +23,7 @@ brew "fish"
 brew "git"
 brew "github/gh/gh"
 brew "golang"
+brew "heroku/brew/heroku"  # https://devcenter.heroku.com/articles/heroku-cli
 brew "hub"                 # https://hub.github.com/
 brew "mas"                 # https://github.com/mas-cli/mas
 brew "postgres"
@@ -34,7 +35,6 @@ brew "trash"
 brew "vim"
 brew "wget"                # https://www.gnu.org/software/wget/manual/wget.html
 brew "youtube-dl"          # https://github.com/ytdl-org/youtube-dl
-brew "heroku/brew/heroku"  # https://devcenter.heroku.com/articles/heroku-cli
 
 # Homebrew installed macOS Applications
 # =====================================
