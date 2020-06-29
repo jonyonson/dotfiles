@@ -20,7 +20,6 @@ brew "bat"
 brew "coreutils"
 brew "diff-so-fancy"       # https://github.com/so-fancy/diff-so-fancy
 brew "fish"
-brew "fzf"                 # https://github.com/junegunn/fzf
 brew "git"
 brew "github/gh/gh"
 brew "golang"

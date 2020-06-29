@@ -22,8 +22,6 @@ link ".exports"
 link ".functions"
 link ".hushlogin"
 link ".inputrc"
-link ".fzf.bash"
-link ".fzf.zsh"
 link ".zshrc"
 
 # add a check to see if directory exists first
