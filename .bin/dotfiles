@@ -11,7 +11,7 @@ link() {
 # add a check to see if directory exists first
 cd ${DOTFILES_DIR}
 
-link ".bash_aliases"
+link ".aliases"
 link ".bash_profile"
 link ".bash_prompt"
 link ".bashrc"

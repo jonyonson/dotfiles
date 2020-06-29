@@ -2,7 +2,7 @@
 # ==========================================
 
 # source our dotfiles
-for file in ~/.{exports,bash_aliases,functions,bash_prompt,env}; do
+for file in ~/.{exports,aliases,functions,bash_prompt,env}; do
   [ -r "$file" ] && source "$file"
 done
 unset file

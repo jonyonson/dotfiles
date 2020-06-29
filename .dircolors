@@ -735,6 +735,7 @@ TERM xterm-debian
 .functions             38;5;172
 .exports               38;5;172
 .bash_aliases          38;5;172
+.aliases               38;5;172
 .bash_prompt           38;5;172
 .bash_profile          38;5;172
 .bashrc                38;5;172
