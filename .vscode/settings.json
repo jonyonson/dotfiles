@@ -6,7 +6,6 @@
     ".brewfile": "shellscript",
     ".inputrc": "shellscript",
     ".dircolors": "shellscript",
-    "dircolors.bak": "shellscript",
     ".aliases": "shellscript",
     "Brewfile": "shellscript"
   }
