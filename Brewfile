@@ -40,7 +40,6 @@ brew "youtube-dl"          # https://github.com/ytdl-org/youtube-dl
 # =====================================
 cask_args appdir: "/Applications"
 cask "alfred"
-cask "bfxr"                   # https://www.bfxr.net/
 cask "db-browser-for-sqlite"
 cask "carbon-copy-cloner"
 cask "dash"
@@ -51,7 +50,6 @@ cask "hyper"
 cask "insomnia"
 cask "iterm2"
 cask "kindle"
-cask "love"                   # https://love2d.org/
 cask "mongodb-compass"
 cask "now"
 cask "postman"
