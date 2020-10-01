@@ -35,6 +35,7 @@ alias wget="wget --hsts-file ~/.config/wget/wget-hsts"
 # git
 eval "$(hub alias -s)" # alias git="hub"
 alias undo_push="git push -f origin HEAD^:master" # undo a `git push`
+alias gp='git push'
 
 # npm / yarn global packages
 alias npm_leaves="npm ls --depth=0 -g"
