@@ -35,6 +35,7 @@ alias wget="wget --hsts-file ~/.config/wget/wget-hsts"
 # git
 eval "$(hub alias -s)" # alias git="hub"
 alias undo_push="git push -f origin HEAD^:master" # undo a `git push`
+alias g='git'
 alias gp='git push'
 alias gco='git checkout'
 
