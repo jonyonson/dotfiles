@@ -38,6 +38,7 @@ alias undo_push="git push -f origin HEAD^:master" # undo a `git push`
 alias g='git'
 alias ga='ga'
 alias gp='git push'
+alias gst='git status'
 alias gco='git checkout'
 
 # npm / yarn global packages
