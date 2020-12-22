@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 source ~/.exports
+source ~/.env
 
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -73,7 +74,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm vscode yarn z zsh-interactive-cd zsh_reload)
+plugins=(git vscode yarn z zsh-interactive-cd zsh_reload)
 
 # git:                https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
 # nvm:                https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/nvm
@@ -111,4 +112,11 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
 
+# postgreSQL
+alias pg-start="pg_ctl -D /usr/local/var/postgres start"
+alias pg-stop="pg_ctl -D /usr/local/var/postgres stop"
+alias pg-restart="pg_ctl -D /usr/local/var/postgres restart"
 
+
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
