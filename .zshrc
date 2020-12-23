@@ -116,7 +116,3 @@ alias ohmyzsh="code ~/.oh-my-zsh"
 alias pg-start="pg_ctl -D /usr/local/var/postgres start"
 alias pg-stop="pg_ctl -D /usr/local/var/postgres stop"
 alias pg-restart="pg_ctl -D /usr/local/var/postgres restart"
-
-
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
