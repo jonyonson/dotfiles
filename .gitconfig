@@ -57,3 +57,6 @@
 [user]
   name = Jonathan Taylor
   email = jonathan.taylor.dev@gmail.com
+
+[pull]
+	ff = only
