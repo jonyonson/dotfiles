@@ -22,15 +22,11 @@ export JDK11=/Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home
 export JAVA_HOME=$JDK11
 
 # PATH SETUP
-VOLTA_HOME="$HOME/.volta"
-
 PATH="$HOME/.bin:$PATH"
 PATH="/usr/local/opt/python/libexec/bin:$PATH"
-# PATH="$HOME/.yarn/bin:$PATH"
-# PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-PATH="$VOLTA_HOME/bin:$PATH"
+PATH="$HOME/.yarn/bin:$PATH"
+PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH
-
 
 # https://stackoverflow.com/questions/56796426/pipenv-consistently-failing-to-install-pyscopg2
 # PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
