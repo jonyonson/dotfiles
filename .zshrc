@@ -3,6 +3,9 @@
 source ~/.exports
 source ~/.env
 
+# rbenv
+eval "$(rbenv init -)"
+
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
@@ -74,7 +77,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vscode yarn z zsh-interactive-cd zsh_reload)
+plugins=(git vscode yarn z zsh-interactive-cd zsh_reload nvm)
 
 # git:                https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
 # nvm:                https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/nvm
