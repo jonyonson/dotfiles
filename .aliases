@@ -69,3 +69,6 @@ alias ds_store_delete="find . -name '.DS_Store' -type f -delete 2>&1 | grep -v '
 alias pg-start="pg_ctl -D /usr/local/var/postgres start"
 alias pg-stop="pg_ctl -D /usr/local/var/postgres stop"
 alias pg-restart="pg_ctl -D /usr/local/var/postgres restart"
+
+# gh cli
+alias gho="gh repo view --web"
