@@ -33,7 +33,6 @@ alias lwc="less-watch-compiler less css index.less"
 alias wget="wget --hsts-file ~/.config/wget/wget-hsts"
 
 # git
-eval "$(hub alias -s)" # alias git="hub"
 alias undo_push="git push -f origin HEAD^:master" # undo a `git push`
 alias g='git'
 alias ga='git add'
