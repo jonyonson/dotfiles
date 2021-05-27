@@ -32,17 +32,6 @@ alias lwc="less-watch-compiler less css index.less"
 # https://tinyurl.com/y8syjq3c
 alias wget="wget --hsts-file ~/.config/wget/wget-hsts"
 
-# git
-alias undo_push="git push -f origin HEAD^:master" # undo a `git push`
-alias g='git'
-alias ga='git add'
-alias gp='git push'
-alias gl='git pull'
-alias gcmsg='git commit -m'
-alias glg='git log --stat'
-alias gst='git status'
-alias gco='git checkout'
-
 # npm / yarn global packages
 alias npm_leaves="npm ls --depth=0 -g"
 alias yarn_leaves="yarn global list"
