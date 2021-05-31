@@ -26,9 +26,6 @@ alias ll='ls -oh ${color}'        # long format (without group id)
 alias l.='ls -A ${color}'         # Show hidden files
 alias ll.='ls -Aho ${color}'      # Show hidden files in long format
 
-# less
-alias lwc="less-watch-compiler less css index.less"
-
 # https://tinyurl.com/y8syjq3c
 alias wget="wget --hsts-file ~/.config/wget/wget-hsts"
 
