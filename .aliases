@@ -27,7 +27,7 @@ alias l.='ls -A ${color}'         # Show hidden files
 alias ll.='ls -Aho ${color}'      # Show hidden files in long format
 
 # https://tinyurl.com/y8syjq3c
-alias wget="wget --hsts-file ~/.config/wget/wget-hsts"
+# alias wget="wget --hsts-file ~/.config/wget/wget-hsts"
 
 # npm / yarn global packages
 alias npm_leaves="npm ls --depth=0 -g"
