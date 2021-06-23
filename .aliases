@@ -36,9 +36,6 @@ alias yarn_leaves="yarn global list"
 # print homebrew depenency graph
 alias brew_graph="brew-graph --installed --highlight-leaves | dot -T png -o ~/brew-graph.png && open ~/brew-graph.png"
 
-# vim
-alias rm_swaps="find $HOME/.vim/swaps -name '*.sw[a-z]' | xargs rm" # remove vim swap files
-
 # show/hide hidden files in Finder
 alias show_dotfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide_dotfiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
