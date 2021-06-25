@@ -94,17 +94,6 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-
-# TODO - move this to a custom folder
-# Example aliases
-alias zshconfig="code ~/.zshrc"
-alias ohmyzsh="code ~/.oh-my-zsh"
-
-# postgreSQL
-alias pg-start="pg_ctl -D /usr/local/var/postgres start"
-alias pg-stop="pg_ctl -D /usr/local/var/postgres stop"
-alias pg-restart="pg_ctl -D /usr/local/var/postgres restart"
 
 # gh cli
 alias gho="gh repo view --web"
